@@ -31,3 +31,8 @@ function pick_with_vim() {
   fi
 }
 
+which vim > /dev/null 
+RC=`echo $?`
+if [ "$RC" = '0' ]; then
+  alias vi='vim'
+fi
