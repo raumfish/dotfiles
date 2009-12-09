@@ -7,3 +7,12 @@ Host *
   Compression            yes
   CheckHostIP            no
 
+Host github.com
+  User git
+  Port 22
+  Hostname github.com
+  IdentityFile ~/.ssh/id_dsa-nopass
+  PreferredAuthentications publickey
+  IdentitiesOnly yes
+  Compression   no
+
