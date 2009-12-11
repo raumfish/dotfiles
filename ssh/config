@@ -29,6 +29,7 @@ Host github.com
   Port                     22
   Hostname                 github.com
   PreferredAuthentications publickey
+  IdentityFile             ~/.ssh/id_dsa-nopass
   IdentitiesOnly           yes
   Compression              no
 
