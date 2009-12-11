@@ -13,3 +13,6 @@
   external = git_diff_wrapper
 [pager]
   diff =
+[github]
+	user = caomai
+	token = c3d7f44ebb6e711f910c4bb2f5d19e21
