@@ -1,18 +1,35 @@
 
 Host *
-  ForwardAgent           no
-  ForwardX11             no
-  Ciphers                blowfish-cbc
-  ServerAliveInterval    10
-  Compression            yes
-  CheckHostIP            no
+  ForwardAgent              no
+  ForwardX11                no
+  Ciphers                   blowfish-cbc
+  ServerAliveInterval       10
+  Compression               yes
+  CheckHostIP               no
+  CompressionLevel          6
+
+Host *.cat.com
+  ForwardAgent              yes
+  ForwardX11                yes
+  Compression               no
+  CheckHostIP               no
+  TCPKeepAlive              yes
+  LogLevel                  quiet
+  StrictHostKeyChecking     no
+  NumberOfPasswordPrompts   5
+  VerifyHostKeyDNS          no
+  Protocol                  2,1
+  PreferredAuthentications  publickey,password
+  HostbasedAuthentication   no
+  PubkeyAuthentication      yes
+  PasswordAuthentication    yes
 
 Host github.com
-  User git
-  Port 22
-  Hostname github.com
-  IdentityFile ~/.ssh/id_dsa-nopass
+  User                     git
+  Port                     22
+  Hostname                 github.com
+  IdentityFile             ~/.ssh/id_dsa-nopass
   PreferredAuthentications publickey
-  IdentitiesOnly yes
-  Compression   no
+  IdentitiesOnly           yes
+  Compression              no
 
