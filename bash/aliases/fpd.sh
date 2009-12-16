@@ -17,8 +17,10 @@ if [ `hostname` = "ncc01905.fpd.cat.com" ] ; then
 fi
 
 alias ssh='ssh -X -Y'
-alias s='ssh -q -X -Y -l root'
+alias s='ssh -l root'
 alias gw='ssh ncc01905.fpd.cat.com'
+alias root_gw='ssh root@ncc01905.fpd.cat.com'
+alias watcher_gw='ssh watcher@ncc01905.fpd.cat.com'
 alias pet='ssh shawn@69.93.127.245'
 alias root_pet='ssh root@69.93.127.245'
 
