@@ -2,7 +2,7 @@
 Host *
   ForwardAgent              no
   ForwardX11                no
-  Ciphers                   blowfish-cbc
+#  Ciphers                   blowfish-cbc
   ServerAliveInterval       10
   Compression               yes
   CheckHostIP               no

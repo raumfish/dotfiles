@@ -51,7 +51,8 @@ export HISTCONTROL=ignoredups # Ignores dupes in the history
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
+export TERM="xterm"
 
 export FIND_OPTIONS="-name .git -prune -o -name .hg -prune -o -name *.swp -prune -o"
 
