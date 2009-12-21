@@ -29,7 +29,7 @@ Host github.com
   Port                     22
   Hostname                 github.com
   PreferredAuthentications publickey
-  IdentityFile             ~/.ssh/git.id_rsa
+  IdentityFile             ~/.ssh/git_id_rsa
   IdentitiesOnly           yes
   Compression              no
 
