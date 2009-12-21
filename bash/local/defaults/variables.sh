@@ -64,3 +64,5 @@ export DB_USER=""
 export AMAZON_ACCESS_KEY_ID=""
 export AMAZON_SECRET_ACCESS_KEY=""
 
+export LEO_EDITOR="gvim"
+
