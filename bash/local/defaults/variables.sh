@@ -66,3 +66,6 @@ export AMAZON_SECRET_ACCESS_KEY=""
 
 export LEO_EDITOR="gvim"
 
+## Github.com stuff 
+export GISTY_DIR="$HOME/dev/gists"
+
