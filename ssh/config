@@ -2,19 +2,28 @@
 Host *
   ForwardAgent              no
   ForwardX11                no
-#  Ciphers                   blowfish-cbc
-  ServerAliveInterval       10
   Compression               yes
-  CheckHostIP               no
   CompressionLevel          6
+  CheckHostIP               no
+  TCPKeepAlive              yes
+#  LogLevel                  quiet
+  StrictHostKeyChecking     no
+  NumberOfPasswordPrompts   5
+  VerifyHostKeyDNS          no
+  Protocol                  2,1
+  PreferredAuthentications  publickey,password
+  HostbasedAuthentication   no
+  PubkeyAuthentication      yes
+  PasswordAuthentication    yes
 
 Host *.cat.com
   ForwardAgent              yes
   ForwardX11                yes
   Compression               no
+  CompressionLevel          6
   CheckHostIP               no
   TCPKeepAlive              yes
-  LogLevel                  quiet
+#  LogLevel                  quiet
   StrictHostKeyChecking     no
   NumberOfPasswordPrompts   5
   VerifyHostKeyDNS          no
