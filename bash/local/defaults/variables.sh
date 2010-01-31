@@ -67,3 +67,6 @@ export AMAZON_SECRET_ACCESS_KEY=""
 ## Github.com stuff 
 export GISTY_DIR="$HOME/dev/gists"
 
+## PATH
+export PATH=/opt/eclipse:$PATH
+
