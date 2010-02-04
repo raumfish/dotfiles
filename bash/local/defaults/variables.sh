@@ -18,7 +18,10 @@ function prompt_command() {
 #export PS1="\[${COLOR_GREEN}\]\w > \[${COLOR_NC}\]"
 
 ## Alternative prompt with user, host and path
-export PS1="\[${COLOR_GRAY}\]\u@\h \[${COLOR_GREEN}\]\w > \[${COLOR_NC}\]"  # Primary prompt with user, host, and path 
+#export PS1="\[${COLOR_GRAY}\]\u@\h \[${COLOR_GREEN}\]\w > \[${COLOR_NC}\]"  # Primary prompt with user, host, and path 
+
+## Alternative prompt with datetime\nusername, hostname, global history #, current command #
+PS1='\d@\t\n\u@\h:\!:\#:\w$ '
 
 ## Alternative PROMPT_COMMAND with user, hostname and path
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\007"' 
@@ -46,7 +49,15 @@ alias systail='tail -f /var/log/system.log' # Persistent 'tail' of syste log fil
 ## Shows the commands you use most. Useful to show what you should create alias for.
 alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
 
+## History
+export HISTFILE=${HOME}/history
 export HISTCONTROL=ignoredups # Ignores dupes in the history
+export HISTFILESIZE=2000
+export HISTSIZE=50
+export HISTIGNORE="&:[ ]*:exit:cd:pwd:ls:ll:history"
+shopt -s histappend
+shopt -s histreedit
+shopt -s histverify
 
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
@@ -71,4 +82,13 @@ export GISTY_DIR="$HOME/dev/gists"
 
 ## PATH
 export PATH=/opt/eclipse:$PATH
+
+## IRC
+export IRCNAME='Shawn Skriver'
+
+## Terminal
+shopt -s checkwinsize # Update values of LINES and COLUMNS after each command
+
+## Time
+export TZ=CST6CDT
 
