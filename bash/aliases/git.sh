@@ -19,7 +19,7 @@ function gcp() {
   git commit -av -m '-' && git push
 }
 
-if [[ ! `which hub >/dev/null` ]]; then
-  alias git=hub
-fi
+#if [[ ! `which hub >/dev/null` ]]; then
+#  alias git=hub
+#fi
 
