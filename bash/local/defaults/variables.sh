@@ -69,3 +69,6 @@ export LEO_EDITOR="gvim"
 ## Github.com stuff 
 export GISTY_DIR="$HOME/dev/gists"
 
+## Ruby stuff
+export GEM_HOME=/usr/lib/ruby/gems/1.8
+export RUBYOPT=rubygems
