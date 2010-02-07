@@ -41,7 +41,7 @@ source ~/.dirs  # Initialization for the above 'save' facility: source the .sdir
 shopt -s cdable_vars # set the bash option so that no '$' is required when using the above facility
 
 alias g='grep -i'  #case insensitive grep
-alias f='find . -iname' # Find all files below current directory
+alias f='find . -iname "*"' # Find all files below current directory
 alias ducks='du -cks * | sort -rn|head -11' # Lists the size of all the folders and files
 alias top='top -o cpu' # Run 'top' wit cpu option
 alias systail='tail -f /var/log/system.log' # Persistent 'tail' of syste log file
