@@ -53,8 +53,8 @@ alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' 
 export HISTFILE=${HOME}/history
 export HISTCONTROL=ignoredups # Ignores dupes in the history
 export HISTFILESIZE=2000
-export HISTSIZE=50
-export HISTIGNORE="&:[ ]*:exit:cd:pwd:ls:ll:history"
+export HISTSIZE=2000
+export HISTIGNORE="&:[ ]*:exit:cd:pwd:ls:ll:history:clear:reset:stty"
 shopt -s histappend
 shopt -s histreedit
 shopt -s histverify
