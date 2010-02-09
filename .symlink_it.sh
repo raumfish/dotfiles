@@ -16,6 +16,7 @@ relink ~/.bash_logout  ~/etc/bash_logout
 
 relink ~/.vim          ~/etc/vim
 relink ~/.vimrc        ~/etc/vimrc
+relink ~/.gvimrc       ~/etc/gvimrc
 
 relink ~/.irbrc        ~/etc/irbrc
 relink ~/.rdebugrc     ~/etc/rdebugrc
@@ -27,4 +28,3 @@ relink ~/.ssh/config   ~/etc/ssh/config
 relink ~/.gitconfig    ~/etc/gitconfig
 
 relink ~/.rtorrent.rc  ~/etc/rtorrent.rc
-
