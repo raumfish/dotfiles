@@ -65,7 +65,7 @@ export LC_ALL="en_US.UTF-8"
 #export TERM="xterm-256color"
 export TERM="xterm"
 
-export FIND_OPTIONS="-name .git -prune -o -name .hg -prune -o -name *.swp -prune -o"
+export FIND_OPTIONS="-name .svn -prune -o -name .git -prune -o -name .hg -prune -o -name *.swp -prune -o -name *~ -prune -o"
 
 export DB_HOST="localhost"
 export DB_ADAPTER="sqlite"
