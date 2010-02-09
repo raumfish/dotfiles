@@ -353,4 +353,17 @@ inoremap <silent> <F11>  <Esc><Esc>:Tlist<CR>
 
 " set by Shawn
 set viminfo='1000,f1,\"500,:100,/100
+set shortmess+=r
+set showmode
+set smartcase
+set whichwrap=h,l,~,[,]
+noremap Y y$
+
+nnoremap \tp :set invpaste paste?<CR>
+nmap <F9> \tp
+imap <F9> <C-O>\tp
+set pastetoggle=<F9>
+
+" abbreviations
+iabbrev ssgm Shawn.Skriver@gmail.com
 
