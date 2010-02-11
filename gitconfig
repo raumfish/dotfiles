@@ -9,6 +9,7 @@
 [alias]
   st = status
   co = checkout
+	ignore = "f () { local ignore_file=$( git rev-parse --show-cdup ).gitignore arg; for arg in $*; do echo $arg >> $ignore_file; done; sort -u -o $ignore_file $ignore_file; }; f"
 [diff]
   external = git_diff_wrapper
 [pager]
