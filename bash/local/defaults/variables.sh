@@ -85,7 +85,7 @@ export GEM_HOME=/usr/lib/ruby/gems/1.8
 export RUBYOPT=rubygems
 
 ## PATH
-export PATH=/opt/eclipse:$PATH
+#export PATH=$PATH
 
 ## IRC
 export IRCNAME='Shawn Skriver'

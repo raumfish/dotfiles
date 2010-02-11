@@ -366,4 +366,5 @@ set pastetoggle=<F9>
 
 " abbreviations
 iabbrev ssgm Shawn.Skriver@gmail.com
+iabbrev sig -Shawn Skriver
 
