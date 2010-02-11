@@ -9,6 +9,7 @@
 [alias]
   st = status
   co = checkout
+	ignore = "f () { local ignore_file=$( git rev-parse --show-cdup ).gitignore arg; for arg in $*; do echo $arg >> $ignore_file; done; sort -u -o $ignore_file $ignore_file; }; f"
 [diff]
   external = git_diff_wrapper
 [pager]
@@ -16,3 +17,5 @@
 [github]
 	user = caomai
 	token = c3d7f44ebb6e711f910c4bb2f5d19e21
+[core]
+	excludesfile = /home/skrivsm/.gitignore

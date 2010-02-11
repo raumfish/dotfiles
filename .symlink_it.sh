@@ -9,6 +9,7 @@ function relink() {
 cd ..
 
 relink ~/.inputrc      ~/etc/inputrc
+
 relink ~/.bash         ~/etc/bash
 relink ~/.bashrc       ~/etc/bashrc
 relink ~/.bash_profile ~/etc/bash_profile
@@ -23,8 +24,9 @@ relink ~/.rdebugrc     ~/etc/rdebugrc
 
 relink ~/.screenrc     ~/etc/screenrc
 
-relink ~/.ssh/config   ~/etc/ssh/config
-
 relink ~/.gitconfig    ~/etc/gitconfig
+relink ~/.gitignore    ~/etc/gitignore
+
+relink ~/.ssh/config   ~/etc/ssh/config
 
 relink ~/.rtorrent.rc  ~/etc/rtorrent.rc
