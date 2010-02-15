@@ -199,7 +199,7 @@ if  has("win16") || has("win32")     || has("win64") ||
 "    set backupdir =$VIM\vimfiles\backupdir
 "    set dictionary=$VIM\vimfiles\wordlists/german.list
 else
-    set backupdir =$HOME/.vim.backupdir
+    set backupdir=.,./,$HOME/.vim.backupdir
 "    set dictionary=$HOME/.vim/wordlists/german.list
     set dictionary=$HOME/.vim/wordlists/bash.list
 endif
