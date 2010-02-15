@@ -36,3 +36,9 @@ RC=`echo $?`
 if [ "$RC" = '0' ]; then
   alias vi='vim'
 fi
+
+# Create VIM backup dir if not present to avoid "E510 Can't create backup file" error when saving file
+if [[ ! -d ${HOME}/.vim.backupdir ]]; then
+  mkdir -p ${HOME}/.vim.backupdir
+fi
+
