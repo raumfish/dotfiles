@@ -42,3 +42,17 @@ if [[ ! -d ${HOME}/.vim.backupdir ]]; then
   mkdir -p ${HOME}/.vim.backupdir
 fi
 
+# Create a temporary dir if not present
+if [[ ! -d /tmp ]]; then
+  mkdir -p ${HOME}/tmp
+  export TMP=${HOME}/tmp
+  export TEMP=${TMP}
+else
+  export TMP=/tmp
+  export TEMP=${TMP}
+fi
+
+# Cleanup pre-existing vim temporary files
+find ${HOME}/.vim.backupdir -name "*~" -type f -mtime +60 -exec rm -f \{\} \;
+
+

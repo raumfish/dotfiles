@@ -33,7 +33,8 @@ set expandtab
 set softtabstop=2
 set shiftwidth=2
 set tabstop=2
-set virtualedit=block
+"set virtualedit=block
+set virtualedit=all
 set equalprg=
 
 " Search options
@@ -53,7 +54,8 @@ endif
 
 if has('gui_running')
   " nothing please
-  set guioptions=
+"  set guioptions=
+  set guioptions+=Aamg
   set guifont=Inconsolata\ 16
 endif
 
@@ -189,19 +191,21 @@ filetype  indent on
 syntax    on            
 "
 " Platform specific items:
-" - central backup directory (has to be created)
+" - backupdir: central backup directory (has to be created)
+" - directory: central swap directory (has to be created))
 " - default dictionary
 " Uncomment your choice.  
 if  has("win16") || has("win32")     || has("win64") || 
   \ has("win95") || has("win32unix")
     "
-"    runtime mswin.vim
-"    set backupdir =$VIM\vimfiles\backupdir
-"    set dictionary=$VIM\vimfiles\wordlists/german.list
+    runtime mswin.vim
+    set directory=$TMP\\\\,c:\\tmp\\\\,.
+    set backupdir =$VIM\\vimfiles\\backupdir\\,C:\\tmp\\\\,.
+    set dictionary=$VIM\\vimfiles\\wordlists\\english.list
 else
-    set backupdir=.,./,$HOME/.vim.backupdir
-"    set dictionary=$HOME/.vim/wordlists/german.list
-    set dictionary=$HOME/.vim/wordlists/bash.list
+    set directory=$TMP//,.
+    set backupdir=$HOME/.vim.backupdir//,/tmp//,.
+    set dictionary=$HOME/.vim/wordlists/english.list
 endif
 "
 " Using a backupdir under UNIX/Linux: you may want to include a line similar to
@@ -367,4 +371,7 @@ set pastetoggle=<F9>
 " abbreviations
 iabbrev ssgm Shawn.Skriver@gmail.com
 iabbrev sig -Shawn Skriver
+
+silent execute '!mkdir "'.$HOME.'/.vim.backupdir"'
+silent execute '!del "'.$HOME.'/.vim.backupdir/*~"'
 
