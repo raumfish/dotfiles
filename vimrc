@@ -54,9 +54,11 @@ endif
 
 if has('gui_running')
   " nothing please
-"  set guioptions=
+  set guioptions=
+  " add ability to copy into clipboard in both mode and mode-less, menu and
+  " grayed-out menu items rather than not shown menu items
   set guioptions+=Aamg
-  set guifont=Inconsolata\ 16
+  set guifont=Inconsolata\ 12
 endif
 
 if $TERM == "xterm-256color"
@@ -371,7 +373,4 @@ set pastetoggle=<F9>
 " abbreviations
 iabbrev ssgm Shawn.Skriver@gmail.com
 iabbrev sig -Shawn Skriver
-
-silent execute '!mkdir "'.$HOME.'/.vim.backupdir"'
-silent execute '!del "'.$HOME.'/.vim.backupdir/*~"'
 
