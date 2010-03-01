@@ -30,3 +30,8 @@ relink ~/.gitignore    ~/etc/gitignore
 relink ~/.ssh/config   ~/etc/ssh/config
 
 relink ~/.rtorrent.rc  ~/etc/rtorrent.rc
+
+relink ~/.wgetrc       ~/etc/wgetrc
+
+relink ~/.gemrc        ~/etc/gemrc
+
