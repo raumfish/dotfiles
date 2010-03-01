@@ -1,0 +1,10 @@
+--- 
+http_proxy: http://proxy.fpd.cat.com:80
+:update_sources: true
+:backtrace: false
+:bulk_threshold: 1000
+:sources: 
+- http://gems.rubyforge.org/
+- http://gems.github.com
+:verbose: true
+:benchmark: false
