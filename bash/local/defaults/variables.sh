@@ -92,7 +92,8 @@ export IRCNAME='Shawn Skriver'
 
 ## Terminal
 shopt -s checkwinsize # Update values of LINES and COLUMNS after each command
-set -o vi
+#set -o vi
+set -o emacs
 
 ## Time
 export TZ=CST6CDT
