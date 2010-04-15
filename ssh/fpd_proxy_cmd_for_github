@@ -1,0 +1,1 @@
+corkscrew proxy.fpd.cat.com 80 ssh.github.com 443 ~/.ssh/fpd_proxyauth
