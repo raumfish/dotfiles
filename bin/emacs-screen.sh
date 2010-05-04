@@ -24,7 +24,7 @@ DEFAULT_MSG_WAIT=${USER_CONFIGURED_MSG_WAIT:-$DEFAULTMSGWAIT}
 OUR_MSG_WAIT=0.1 # so we don't pause 2 entire seconds when switching
 
 # no -g
-argv[(r)-g]=()
+#argv[(r)-g]=()
 
 isInScreen() {
   echo $TERMCAP | grep -q -E '^SC'
