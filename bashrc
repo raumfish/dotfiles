@@ -30,7 +30,8 @@ PS1="\[\e[37;42m\]\h@\t\[\e[0m\] "
 export PATH="$HOME/etc/bin:$HOME/toolbox/bin:/usr/local/bin:/usr/local/sbin:/opt/local/sbin:/opt/local/bin:/sbin:/bin:/usr/sbin:/usr/bin::/usr/X11R6/bin"
 export MANPATH="/opt/local/share/man:$MANPATH"
 
-export EDITOR="emacsclient -g"
+export EDITOR="emacsclient -t"
+export ALTERNATE_EDITOR=/usr/bin/emacs-nox
 export PAGER="less"
 export BLOCKSIZE="K"
 
