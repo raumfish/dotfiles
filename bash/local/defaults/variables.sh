@@ -106,3 +106,6 @@ export PS2='continue> '
 export PS3='choose: '
 export PS4='|${BASH_SOURCE} ${LINENO}${FUNCNAME[0]:+ ${FUNCNAME[0]}()}|  '
 
+## Emacs-related
+alias emacs=emacs-screen.sh
+
