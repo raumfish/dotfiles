@@ -99,7 +99,7 @@
 ;; always start gnuserv.  Otherwise it is preferable to specify
 ;; `-f gnuserv-start' on the command line to one of the XEmacsen.
 ;;(gnuserv-start)
-;(server-start)
+(server-start)
 
 ;;; Load LustyExplorer, which manages files and buffers.
 (require 'lusty-explorer)
