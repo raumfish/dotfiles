@@ -35,3 +35,4 @@ relink ~/.wgetrc       ~/etc/wgetrc
 
 relink ~/.gemrc        ~/etc/gemrc
 
+relink ~/.emacs        ~/etc/emacs
