@@ -72,6 +72,18 @@
 ;; uncomment the next line (or use `Customize' to customize this).
 (setq delete-key-deletes-forward t)
 
+;; emacsclient/server hook
+(defvar server-seb-mode-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map "\C-xk"
+      '(lambda ()
+        (interactive)
+        (shell-command (concat "touch " "/tmp/blah"))
+        (server-edit)))
+    map))
+(define-minor-mode server-seb-mode "Server")
+(add-hook 'server-visit-hook 'server-seb-mode)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;              Customization of Specific Packages                  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
