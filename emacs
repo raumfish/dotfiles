@@ -116,3 +116,11 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  )
+
+;;; Load Tramp, which handles remote file editing
+(require 'tramp)
+(setq tramp-default-method "ssh")
+;(add-to-list 'tramp-default-method-alist '("\\`localhost\\'" "\\`root\\'" "sudo"))
+(add-to-list 'tramp-default-method-alist '("localhost" "root" "sudo"))
+(add-to-list 'tramp-default-method-alist '("" "root" "sshx"))
+

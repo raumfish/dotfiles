@@ -1,4 +1,4 @@
-
+alias e="$EDITOR"
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias l='ls -l'
