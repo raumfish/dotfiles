@@ -36,8 +36,10 @@
 
 ;; Make F1 invoke help
 (global-set-key [f1] 'help-command)
+
 ;; Make F2 be `undo'
 (global-set-key [f2] 'undo)
+
 ;; Make F3 be `find-file'
 ;; Note: it does not currently work to say
 ;;   (global-set-key [f3] "\C-x\C-f")
@@ -59,14 +61,17 @@
 ;; Make F7 be `save-buffer'
 (global-set-key [f7] 'save-buffer)
 
+;; Make Shift-F7 be `save-buffer' followed by `delete-window'
+(global-set-key [shift f7] "\C-x\C-s\C-x0")
+
 ;; Make F8 be "start macro", F9 be "end macro", F10 be "execute macro"
-;;(global-set-key [f8] 'start-kbd-macro)
-;;(global-set-key [f9] 'end-kbd-macro)
-;;(global-set-key [f10] 'call-last-kbd-macro)
+(global-set-key [f8] 'start-kbd-macro)
+(global-set-key [f9] 'end-kbd-macro)
+(global-set-key [f10] 'call-last-kbd-macro)
 
 ;; Here's an alternative binding if you don't use keyboard macros:
 ;; Make F8 be `save-buffer' followed by `delete-window'.
-(global-set-key [f8] "\C-x\C-s\C-x0")
+;;(global-set-key [f8] "\C-x\C-s\C-x0")
 
 ;; If you prefer delete to actually delete forward then you want to
 ;; uncomment the next line (or use `Customize' to customize this).
@@ -74,13 +79,13 @@
 
 ;; emacsclient/server hook
 (defvar server-seb-mode-map
-  (let ((map (make-sparse-keymap)))
-    (define-key map "\C-xk"
-      '(lambda ()
-        (interactive)
-        (shell-command (concat "touch " "/tmp/blah"))
-        (server-edit)))
-    map))
+(let ((map (make-sparse-keymap)))
+  (define-key map "\C-xk"
+    '(lambda ()
+      (interactive)
+      (shell-command (concat "touch " "/tmp/blah"))
+      (server-edit)))
+  map))
 (define-minor-mode server-seb-mode "Server")
 (add-hook 'server-visit-hook 'server-seb-mode)
 
@@ -105,22 +110,70 @@
 (require 'lusty-explorer)
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(inhibit-startup-screen t))
+;; custom-set-variables was added by Custom.
+;; If you edit it by hand, you could mess it up, so be careful.
+;; Your init file should contain only one such instance.
+;; If there is more than one, they won't work right.
+'(inhibit-startup-screen t))
+
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )
+;; custom-set-faces was added by Custom.
+;; If you edit it by hand, you could mess it up, so be careful.
+;; Your init file should contain only one such instance.
+;; If there is more than one, they won't work right.
+)
+
+;;; Load Path
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/"
+)
 
 ;;; Load Tramp, which handles remote file editing
 (require 'tramp)
-(setq tramp-default-method "ssh")
-;(add-to-list 'tramp-default-method-alist '("\\`localhost\\'" "\\`root\\'" "sudo"))
+(setq tramp-default-method "sshx")
+
 (add-to-list 'tramp-default-method-alist '("localhost" "root" "sudo"))
 (add-to-list 'tramp-default-method-alist '("" "root" "sshx"))
+
+;;; Define Macros
+(fset 'sms-comment-hash
+   "\C-a#\C-n")
+
+(fset 'sms-comment-semicolon
+   "\C-a;\C-n")
+
+(fset 'sms-del-first-char
+   [?\C-a delete ?\C-n])
+
+;;; Inferior Ruby Mode - ruby process in a buffer.
+;;;                      adapted from cmuscheme.el
+;;;
+;;; Usage:
+;;;
+;;; (0) check ruby-program-name variable that can run your environment.
+;;;
+;;; (1) modify .emacs to use ruby-mode 
+;;;     for example :
+;;;
+    (autoload 'ruby-mode "ruby-mode"
+      "Mode for editing ruby source files" t)
+    (setq auto-mode-alist
+          (append '(("\\.rb$" . ruby-mode)) auto-mode-alist))
+    (setq interpreter-mode-alist (append '(("ruby" . ruby-mode))
+                                  interpreter-mode-alist))
+    
+;;; (2) set to load inf-ruby and set inf-ruby key definition in ruby-mode.
+;;;
+    (autoload 'run-ruby "inf-ruby"
+      "Run an inferior Ruby process")
+    (autoload 'inf-ruby-keys "inf-ruby"
+      "Set local key defs for inf-ruby in ruby-mode")
+    (add-hook 'ruby-mode-hook
+          '(lambda ()
+             (inf-ruby-keys)
+    ))
+
+;;; irbsh
+
+(load "irbsh")
+(load "irbsh-toggle")
 

@@ -1,7 +1,7 @@
 
 IRB.conf[:AUTO_INDENT] = true
 IRB.conf[:USE_READLINE] = true
-IRB.conf[:PROMPT_MODE] = :SIMPLE
+#IRB.conf[:PROMPT_MODE] = :SIMPLE
 
 require 'irb/completion'
 require 'pp'
@@ -13,3 +13,4 @@ if ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
   RAILS_DEFAULT_LOGGER = Logger.new(STDOUT)
 end
 
+load "irbsh-lib.rb" if IRB.conf[:PROMPT_MODE] == :INF_RUBY
