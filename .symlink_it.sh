@@ -38,3 +38,6 @@ relink ~/.gemrc        ~/etc/gemrc
 relink ~/.emacs        ~/etc/emacs
 
 relink ~/.zile        ~/etc/zile
+
+relink ~/.curlrc      ~/etc/curlrc
+
