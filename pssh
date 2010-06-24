@@ -1,0 +1,89 @@
+#$Id: dot.pssh 1487 2009-02-18 23:16:00Z skrivsm $
+#$HeadURL: http://svn.fpd.cat.com/unix/personal/skrivsm/env/dot.pssh $
+
+##  The following directives are used by pssh to configure the scripts.
+##  This file is sourced as a shell script, so just keep the syntax
+##  bash (sh) compatible.
+
+  ## Input Files ##
+
+## SCRIPT_TO_RUN is the scripts/program you want run on each node.
+## Default: /usr/share/pssh/contrib/bigone
+#SCRIPT_TO_RUN=/usr/share/pssh/contrib/bigone
+SCRIPT_TO_RUN=/home/skrivsm/pssh/bigone.sh
+
+## PRE_SCRIPT is a script to run prior to executing the HARVESTER
+## Default: /bin/true  (which is effectively none)
+#PRE_SCRIPT=/bin/true
+PRE_SCRIPT=/home/skrivsm/pssh/pre.sh
+
+## POST_SCRIPT is a script to run after executing the HARVESTER.
+## Default: /bin/true  (which is effectively none)
+#POST_SCRIPT=/bin/true
+POST_SCRIPT=/home/skrivsm/pssh/post.sh
+
+## Default list to user for servers to attempt an SSH connection to.
+## Default: list (it is outputted to the run directory)
+#SERVER_LIST=list
+SERVER_LIST=/home/skrivsm/pssh/list
+
+  ## PSSH Settings ##
+
+## Interpreter is the name of program (full path is nice) that should run the
+## the scripts remotely.
+## Default: /bin/sh  (note that /bin/sh is not bash on all systems)
+#INTERPRETER=/bin/sh
+#INTERPRETER=/usr/bin/bash
+INTERPRETER=/bin/bash
+
+## Harvester script location.
+## By default this is /usr/share/pssh/harvester.sh
+#HARVEST_SCRIPT_LOC=/usr/share/pssh/harvester.sh
+
+  ## Output Settings ##
+
+## The file that has the error log.
+## Default is ${HOME}/pssh/badness.out
+#ERROR_LOG=${HOME}/pssh/badness.out
+ERROR_LOG=/home/skrivsm/pssh/error.log
+
+## Results directory is where all the results are stored.
+## Default: ${HOME}/pssh/results
+#RESULTS_DIR=${HOME}/pssh/results
+RESULTS_DIR=/home/skrivsm/pssh/results
+
+## The USE_EMPTY_FILES token specifies whether or not empty files should
+## be created when no information for a particular host is available.
+## Default: no
+##_NOTE: [BUG] Uncommenting the following results in ALL result files being null!
+#USE_EMPTY_FILES=no
+
+## NO_OUT_FILE is a file used to list which targets had no output.
+## Default: no-output.log
+#NO_OUT_FILE=${HOME}/pssh/no-output.log
+NO_OUT_FILE=/home/skrivsm/pssh/no-output.log
+
+  ## SSH Settings ##
+
+## User to login as for remote connection
+## By default this is root
+#REMOTE_USER_NAME=root
+
+## Timeout in case SSH can't connect to a remote system (in seconds)
+## By default this is 120 seconds
+#TIME_OUT=120
+TIME_OUT=180
+
+## Max number of SSH processes on the system
+## By default this is 150 processes
+#SSH_MAX=150
+
+## How often shoud pssh check for the SSH_MAX number of processes
+## (in iterations)
+## By default this is 40 iterations
+#CHECK_MAX=40
+
+## SSH client type
+## By default pssh will search the sytem for a proper ssh client.
+## You can force a client here.  Allowed values are [Tectia|OpenSSH|search]"
+#SSH_CLIENT_TYPE=search
