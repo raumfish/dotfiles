@@ -105,7 +105,8 @@ export TZ=CST6CDT
 #-----------------------------------------------------------------------
 export PS2='continue> '
 export PS3='choose: '
-export PS4='|${BASH_SOURCE} ${LINENO}${FUNCNAME[0]:+ ${FUNCNAME[0]}()}|  '
+#export PS4='|${BASH_SOURCE} ${LINENO}${FUNCNAME[0]:+ ${FUNCNAME[0]}()}|  '
+export PS4='(${BASH_SOURCE}:${LINENO}): ${FUNCNAME[0]} - [${SHLVL},${BASH_SUBSHELL}, $?] '
 
 ## Emacs-related
 #alias emacs=emacs-screen.sh
