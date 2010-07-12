@@ -67,7 +67,7 @@ NO_OUT_FILE=/home/skrivsm/pssh/no-output.log
 
 ## User to login as for remote connection
 ## By default this is root
-#REMOTE_USER_NAME=root
+REMOTE_USER_NAME=root
 
 ## Timeout in case SSH can't connect to a remote system (in seconds)
 ## By default this is 120 seconds

@@ -43,7 +43,8 @@ shopt -s cdable_vars # set the bash option so that no '$' is required when using
 alias g='grep -i'  #case insensitive grep
 alias f='find . -iname "*"' # Find all files below current directory
 alias ducks='du -cks * | sort -rn|head -11' # Lists the size of all the folders and files
-alias systail='tail -f /var/log/system.log' # Persistent 'tail' of syste log file
+alias systail='tail -f /var/log/system.log' # Persistent 'tail' of system log file
+alias msgtail='tail -f /var/log/messages' # Persistent 'tail' of messages log file
 
 ## Shows the commands you use most. Useful to show what you should create alias for.
 alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
@@ -107,5 +108,5 @@ export PS3='choose: '
 export PS4='|${BASH_SOURCE} ${LINENO}${FUNCNAME[0]:+ ${FUNCNAME[0]}()}|  '
 
 ## Emacs-related
-alias emacs=emacs-screen.sh
+#alias emacs=emacs-screen.sh
 
