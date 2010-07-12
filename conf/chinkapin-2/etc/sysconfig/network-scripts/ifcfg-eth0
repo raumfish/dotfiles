@@ -1,0 +1,14 @@
+# Intel Corporation 82566DM-2 Gigabit Network Connection
+DEVICE=eth0
+BOOTPROTO=dhcp
+DEFROUTE=yes
+DHCPCLASS=
+HWADDR=00:1E:4F:F6:33:9D
+IPV4_FAILURE_FATAL=yes
+IPV6INIT=no
+ONBOOT=yes
+OPTIONS=layer2=1
+PEERDNS=yes
+PEERROUTES=yes
+TYPE=Ethernet
+UUID=5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03
