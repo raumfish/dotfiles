@@ -55,5 +55,5 @@ function nicemount() {
 }
 
 function wiki() {
-  dig +short txt $1.wp.dg.cs;
+  dig +short txt $1.wp.dg.cx;
 }
