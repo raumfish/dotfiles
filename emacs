@@ -29,16 +29,16 @@
 
 ;; Make the sequence "C-x w" execute the `what-line' command, 
 ;; which prints the current line number in the echo area.
-(global-set-key "\C-xw" 'what-line)
+;(global-set-key "\C-xw" 'what-line)
 
 ;; set up the function keys to do common tasks to reduce Emacs pinky
 ;; and such.
 
 ;; Make F1 invoke help
-(global-set-key [f1] 'help-command)
+;(global-set-key [f1] 'help-command)
 
 ;; Make F2 be `undo'
-(global-set-key [f2] 'undo)
+;(global-set-key [f2] 'undo)
 
 ;; Make F3 be `find-file'
 ;; Note: it does not currently work to say
@@ -46,28 +46,28 @@
 ;; The reason is that macros can't do interactive things properly.
 ;; This is an extremely longstanding bug in Emacs.  Eventually,
 ;; it will be fixed. (Hopefully ..)
-(global-set-key [f3] 'find-file)
+;(global-set-key [f3] 'find-file)
 
 ;; Make F4 be "mark", F5 be "copy", F6 be "paste"
 ;; Note that you can set a key sequence either to a command or to another
 ;; key sequence.
-(global-set-key [f4] 'set-mark-command)
-(global-set-key [f5] "\M-w")
-(global-set-key [f6] "\C-y")
+;(global-set-key [f4] 'set-mark-command)
+;(global-set-key [f5] "\M-w")
+;(global-set-key [f6] "\C-y")
 
 ;; Shift-F4 is "pop mark off of stack"
-(global-set-key [(shift f4)] (lambda () (interactive) (set-mark-command t)))
+;(global-set-key [(shift f4)] (lambda () (interactive) (set-mark-command t)))
 
 ;; Make F7 be `save-buffer'
-(global-set-key [f7] 'save-buffer)
+;(global-set-key [f7] 'save-buffer)
 
 ;; Make Shift-F7 be `save-buffer' followed by `delete-window'
-(global-set-key [shift f7] "\C-x\C-s\C-x0")
+;(global-set-key [shift f7] "\C-x\C-s\C-x0")
 
 ;; Make F8 be "start macro", F9 be "end macro", F10 be "execute macro"
-(global-set-key [f8] 'start-kbd-macro)
-(global-set-key [f9] 'end-kbd-macro)
-(global-set-key [f10] 'call-last-kbd-macro)
+;(global-set-key [f8] 'start-kbd-macro)
+;(global-set-key [f9] 'end-kbd-macro)
+;(global-set-key [f10] 'call-last-kbd-macro)
 
 ;; Here's an alternative binding if you don't use keyboard macros:
 ;; Make F8 be `save-buffer' followed by `delete-window'.
@@ -110,18 +110,24 @@
 (require 'lusty-explorer)
 
 (custom-set-variables
-;; custom-set-variables was added by Custom.
-;; If you edit it by hand, you could mess it up, so be careful.
-;; Your init file should contain only one such instance.
-;; If there is more than one, they won't work right.
-'(inhibit-startup-screen t))
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
+ '(inhibit-startup-echo-area-message "skrivsm")
+ '(initial-buffer-choice t)
+ '(initial-scratch-message nil)
+ '(show-paren-mode t)
+ '(size-indication-mode t)
+ '(uniquify-buffer-name-style (quote forward) nil (uniquify)))
 
 (custom-set-faces
-;; custom-set-faces was added by Custom.
-;; If you edit it by hand, you could mess it up, so be careful.
-;; Your init file should contain only one such instance.
-;; If there is more than one, they won't work right.
-)
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :background "#ffffff" :foreground "#141312" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 103 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
 
 ;;; Load Path
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/"
@@ -183,6 +189,6 @@
 
 ;;; irbsh
 
-(load "irbsh")
-(load "irbsh-toggle")
+;;(load "irbsh")
+;;(load "irbsh-toggle")
 
