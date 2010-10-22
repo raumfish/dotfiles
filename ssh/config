@@ -1,3 +1,22 @@
+Host n1mwph1
+  Hostname                  n1mwph1.corp.cat.com
+  IdentityFile              ~/.ssh/hpc_id_dsa
+  ForwardAgent              yes
+  ForwardX11                yes
+  Compression               no
+  CompressionLevel          6
+  CheckHostIP               no
+  TCPKeepAlive              yes
+  LogLevel                  quiet
+  StrictHostKeyChecking     no
+  NumberOfPasswordPrompts   5
+  VerifyHostKeyDNS          no
+  Protocol                  2
+  PreferredAuthentications  publickey,password
+  HostbasedAuthentication   no
+  PubkeyAuthentication      yes
+  PasswordAuthentication    yes
+
 Host github.com
   User                     git
   Port                     22

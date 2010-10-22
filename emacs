@@ -135,10 +135,10 @@
 
 ;;; Load Tramp, which handles remote file editing
 (require 'tramp)
-(setq tramp-default-method "sshx")
+(setq tramp-default-method "ssh")
 
-(add-to-list 'tramp-default-method-alist '("localhost" "root" "sudo"))
-(add-to-list 'tramp-default-method-alist '("" "root" "sshx"))
+(add-to-list 'tramp-default-method-alist '("chinkapin.mw.na.cat.com" "root" "sudo"))
+(add-to-list 'tramp-default-method-alist '("" "skrivsm" "ssh"))
 
 ;;; Define Macros
 (fset 'sms-comment-hash
