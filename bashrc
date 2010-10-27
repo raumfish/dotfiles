@@ -68,3 +68,9 @@ done
 source      $HOME/.bash/bindings.sh
 cond_source $HOME/.bash/local/bindings.sh
 
+############################################################
+# INTERNET                                                 #
+############################################################
+
+export HTTP_PROXY=http://proxy.cat.com:80/
+export http_proxy=${HTTP_PROXY}
