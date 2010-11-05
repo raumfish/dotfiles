@@ -16,7 +16,8 @@ if [ `hostname` = "ncc01905.fpd.cat.com" ] ; then
    fi
 fi
 
-alias ssh='ssh -X -Y'
+#alias ssh='ssh -X -Y'
+alias ssh='ssh -X'
 alias s='ssh -l root'
 
 alias gw='ssh n1mwph1.corp.cat.com'
