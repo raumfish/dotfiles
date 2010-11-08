@@ -1,4 +1,4 @@
-Host n1mw?h?
+Host n1mw#
   IdentityFile              ~/.ssh/hpc_id_dsa
   IdentitiesOnly            yes
   ForwardAgent              yes
@@ -17,7 +17,7 @@ Host n1mw?h?
   PubkeyAuthentication      yes
   PasswordAuthentication    yes
 
-Host n1mwvis*
+Host dxhpc*
   IdentityFile              ~/.ssh/hpc_id_dsa
   IdentitiesOnly            yes
   ForwardAgent              yes
@@ -34,29 +34,14 @@ Host n1mwvis*
   PreferredAuthentications  publickey,password
   HostbasedAuthentication   no
   PubkeyAuthentication      yes
-  PasswordAuthentication    yes
-
-Host dxhpc*.uk.cat.com
-  ForwardAgent              yes
-  ForwardX11                yes
-  Compression               no
-  CompressionLevel          6
-  CheckHostIP               no
-  TCPKeepAlive              yes
-  LogLevel                  quiet
-  StrictHostKeyChecking     no
-  NumberOfPasswordPrompts   5
-  VerifyHostKeyDNS          no
-  Protocol                  2
-  PreferredAuthentications  password
-  HostbasedAuthentication   no
-  PubkeyAuthentication      no
   PasswordAuthentication    yes
 
 Host *.cat.com
+  IdentityFile              ~/.ssh/id_dsa
+  IdentitiesOnly            yes
   ForwardAgent              yes
   ForwardX11                yes
-  Compression               no
+  Compression               yes
   CompressionLevel          6
   CheckHostIP               no
   TCPKeepAlive              yes
@@ -67,31 +52,31 @@ Host *.cat.com
   Protocol                  2,1
   PreferredAuthentications  publickey,password
   HostbasedAuthentication   no
-  IdentityFile              ~/.ssh/id_dsa
-  IdentitiesOnly            yes
   PubkeyAuthentication      yes
   PasswordAuthentication    yes
 
 Host github.com
-  User                     git
-  Port                     22
-  Hostname                 github.com
-  PreferredAuthentications publickey
-  IdentityFile             ~/.ssh/git_id_rsa
-  IdentitiesOnly           yes
-  Compression              no
+  IdentityFile              ~/.ssh/git_id_rsa
+  IdentitiesOnly            yes
+  User                      git
+  Port                      22
+  Hostname                  github.com
+  PreferredAuthentications  publickey
+  Compression               no
+  PubkeyAuthentication      yes
+  PasswordAuthentication    no
 
 Host *
-  ForwardAgent              no
-  ForwardX11                no
+  ForwardAgent              yes
+  ForwardX11                yes
   Compression               yes
   CompressionLevel          6
-  CheckHostIP               no
+  CheckHostIP               yes
   TCPKeepAlive              yes
   LogLevel                  verbose
-  StrictHostKeyChecking     no
+  StrictHostKeyChecking     yes
   NumberOfPasswordPrompts   5
-  VerifyHostKeyDNS          no
+  VerifyHostKeyDNS          yes
   Protocol                  2,1
   PreferredAuthentications  publickey,password
   HostbasedAuthentication   no

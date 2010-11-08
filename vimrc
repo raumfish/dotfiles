@@ -298,7 +298,7 @@ endif " has("autocmd")
 "
 map   <silent> <F2>        :write<CR>
 map   <silent> <F3>        :Explore<CR>
-nmap  <silent> <F4>        :exe ":ptag ".expand("<cword>")<CR>
+"nmap  <silent> <F4>        :exe ":ptag ".expand("<cword>")<CR>
 map   <silent> <F5>        :copen<CR>
 map   <silent> <F6>        :cclose<CR>
 map   <silent> <F7>        :cp<CR>
@@ -306,7 +306,7 @@ map   <silent> <F8>        :cn<CR>
 "
 imap  <silent> <F2>   <Esc>:write<CR>
 imap  <silent> <F3>   <Esc>:Explore<CR>
-imap  <silent> <F4>   <Esc>:exe ":ptag ".expand("<cword>")<CR>
+"imap  <silent> <F4>   <Esc>:exe ":ptag ".expand("<cword>")<CR>
 imap  <silent> <F5>   <Esc>:copen<CR>
 imap  <silent> <F6>   <Esc>:cclose<CR>
 imap  <silent> <F7>   <Esc>:cp<CR>
@@ -354,8 +354,8 @@ endfunction    " ----------  end of function QuoteInsertionWrapper  ----------
 "-------------------------------------------------------------------------------
 " taglist.vim : toggle the taglist window
 "-------------------------------------------------------------------------------
- noremap <silent> <F11>  <Esc><Esc>:Tlist<CR>
-inoremap <silent> <F11>  <Esc><Esc>:Tlist<CR>
+" noremap <silent> <F11>  <Esc><Esc>:Tlist<CR>
+"inoremap <silent> <F11>  <Esc><Esc>:Tlist<CR>
 
 " set by Shawn
 set viminfo='1000,f1,\"500,:100,/100
