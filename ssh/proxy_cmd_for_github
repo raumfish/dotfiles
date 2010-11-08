@@ -1,0 +1,1 @@
+corkscrew proxy.cat.com 80 ssh.github.com 443 ~/.ssh/proxyauth

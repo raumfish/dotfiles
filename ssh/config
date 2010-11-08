@@ -36,9 +36,9 @@ Host dxhpc*
   PubkeyAuthentication      yes
   PasswordAuthentication    yes
 
-Host *.cat.com
-  IdentityFile              ~/.ssh/id_dsa
-  IdentitiesOnly            yes
+Host pesweb-p4.lrd.cat.com
+#  IdentityFile              ~/.ssh/id_rsa
+#  IdentitiesOnly            yes
   ForwardAgent              yes
   ForwardX11                yes
   Compression               yes
@@ -50,9 +50,11 @@ Host *.cat.com
   NumberOfPasswordPrompts   5
   VerifyHostKeyDNS          no
   Protocol                  2,1
-  PreferredAuthentications  publickey,password
+#  PreferredAuthentications  publickey,password
+  PreferredAuthentications  password
   HostbasedAuthentication   no
-  PubkeyAuthentication      yes
+#  PubkeyAuthentication      yes
+  PubkeyAuthentication      no
   PasswordAuthentication    yes
 
 Host github.com
@@ -66,20 +68,20 @@ Host github.com
   PubkeyAuthentication      yes
   PasswordAuthentication    no
 
-Host *
-  ForwardAgent              yes
-  ForwardX11                yes
-  Compression               yes
-  CompressionLevel          6
-  CheckHostIP               yes
-  TCPKeepAlive              yes
-  LogLevel                  verbose
-  StrictHostKeyChecking     yes
-  NumberOfPasswordPrompts   5
-  VerifyHostKeyDNS          yes
-  Protocol                  2,1
-  PreferredAuthentications  publickey,password
-  HostbasedAuthentication   no
-  PubkeyAuthentication      yes
-  PasswordAuthentication    yes
+#Host *
+#  ForwardAgent              yes
+#  ForwardX11                yes
+#  Compression               yes
+#  CompressionLevel          6
+#  CheckHostIP               yes
+#  TCPKeepAlive              yes
+#  LogLevel                  verbose
+#  StrictHostKeyChecking     yes
+#  NumberOfPasswordPrompts   5
+#  VerifyHostKeyDNS          yes
+#  Protocol                  2,1
+#  PreferredAuthentications  publickey,password
+#  HostbasedAuthentication   no
+#  PubkeyAuthentication      yes
+#  PasswordAuthentication    yes
 
