@@ -1,0 +1,2 @@
+create table node_top (node_name TEXT, pid INTEGER, user TEXT, pr TEXT, ni INTEGER, virt TEXT, res TEXT, shr INTEGER, s TEXT, pcpu NUMBER, pmem NUMBER, timep TEXT, command TEXT);
+.q

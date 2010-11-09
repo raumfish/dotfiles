@@ -1,0 +1,568 @@
+ll
+scp -rp ncc01905.fpd.cat.com:./etc/ .
+scp -rp ncc01905.fpd.cat.com:./toolbox/ .
+ll
+ll
+cd etc/
+ll
+ls -la
+./.symlink_it.sh
+cd
+ll
+ls -lart
+ll ssh
+ll .ssh
+ll .ssh/alt
+cd
+. .bashrc
+echo $DISPLAY
+xterm
+cd /
+cd apps
+cd Fluent/ansys_inc/fluent/
+cd ..
+ll v130
+cd v130/fluent/
+cd bin
+./fluent
+cd ../..
+cd ../
+cd v121/fluent/bin/
+./fluent
+sudo su -
+cd etc/
+git status
+git pull
+git push
+cd toolbox/
+git status
+git pull
+git push
+ll bin
+rm -rf bin
+ln -s ~/toolbox/bin bin
+cd pssh/
+ll scripts/
+rm -rf scripts/
+ln -s ~/toolbox/bin/ scripts
+emacs
+rpm -e emacs
+rpm -qa emacs
+sudo su -
+ftp caomai.com
+sudo su -
+cd src
+gzip -d App-ClusterSSH-4.00_06.tar.gz 
+tar -tvf App-ClusterSSH-4.00_06.tar 
+tar -xvf App-ClusterSSH-4.00_06.tar 
+cd App-ClusterSSH-4.00_06
+sudo su -
+export DISPLAY=c001318676.mw.na.cat.com:11.0
+xterm
+export DISPLAY=c001318676.mw.na.cat.com:0.0
+xterm
+export DISPLAY=c001318676.mw.na.cat.com:0.0
+xterm
+export DISPLAY=c001318676.mw.na.cat.com:10.0
+xterm
+sudo su -
+cd src/
+sudo su -
+mkdir bak
+mv hpc/hosts.orig.2010-10-01 bak/
+cd /
+cd /home
+sudo su -
+cd 0_hpc/
+touch junk
+rm -f junk
+git init
+git info
+git log
+ls -la
+cd /home/0_hpc/
+rm -rf .git
+sudo su -
+git init
+git info
+git 
+git log
+git status
+git add .
+git status
+vi .gitignore
+git status
+git add .
+git status
+git commit -m 'initial commit with hosts file'
+mkdir man
+mkdir sysadmin
+chmod o-r,o-x sysadmin/
+pdsh -v
+pdsh -V
+sudo su -
+rm -rf .git
+git status
+ls -la
+mv ref/ etc/
+ll etc
+cd etc/
+grep vis hosts 
+grep vis hosts > vis.hosts
+grep pn hosts 
+grep pn hosts > pn.hosts
+grep dn hosts 
+grep dn hosts > dn.hosts
+grep mw hosts 
+grep mwd hosts 
+grep mwd hosts > mwd.hosts
+grep mwp hosts > mwp.hosts
+cd ..
+cat .gitignore 
+cd etc/
+touch machines
+cat hosts > machines 
+sudo su -
+cd /usr/lib
+ll | grep read
+cd /usr/lib/openmpi/1.3.2-gcc/bin/
+env | grep LD_LIB
+sudo su -
+env | grep central
+sudo su -
+env | grep "(LIBRARY|PATH)"
+env | grep -E "(LIBRARY|PATH)"
+sudo su -
+cd src/
+mkdir ISO
+mkdir RPM
+mv *.rpm RPM/
+mkdir SOURCES
+mv *.gz SOURCES/
+mkdir config
+mv *.conf* config/
+gzip *.tar
+mv *.gz SOURCES/
+cd ISO/
+ls -kh
+ls -lkh
+sudo su -
+echo $MANPATH
+which pdsh
+sudo su -
+ping ntp.corp.cat.com
+hostname
+who
+sudo su -
+which pdsh
+sudo su -
+sudo su -
+exec env ENV='' PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh
+sudo su -
+ls -la
+sudo chown skrivsm:spd .toprc 
+top
+cd etc/
+git status
+git pull
+git status
+git pull
+git push
+cd 
+cd etc/
+cd .ssh/
+vi id_rsa*
+vi id_dsa*
+ll id*
+cat id_dsa.pub
+sudo su -
+history | grep pdsh
+pdsh -v
+pdsh -a 'uname -a' | dshbak
+sudo su -
+ssh root@n1mwph1
+cd .ss
+cd .ssh
+cat id_dsa.pub
+cat hpc_id_dsa.pub
+cd .ssh
+cat hpc_id_dsa.pub >> authorized_keys
+sudo su -
+qstat
+locate qstat
+/usr/pbs/bin/qstat
+vi .bashrc
+cd etc
+git
+git status
+git add .
+git commit -m 'mod bashrc'
+git pull
+git push
+vi .bashrc
+which psh
+. .bashrc
+which psh
+psh vis uptime
+sudo su -
+ping vis02
+psh compute hostname
+sudo su -
+export DISPLAY=172.20.212.148:0.0
+emacs
+export DISPLAY=172.20.212.148:0.0
+sudo su -
+emacs
+echo $DISPLAY
+sudo su -
+xterm
+sudo su -
+mount
+sudo su -
+sudo su -
+top
+who
+ssh skrivsm@pesweb.ecorp.cat.com
+ssh --verbose  skrivsm@pesweb.ecorp.cat.com
+passwd
+sudo su -
+ssh skrivsm@mtapachep4.lrd.cat.com
+ssh pesweb
+ssh pesweb.corp.cat.com
+nslookup 
+cd etc
+git status
+git add .
+git commit -m 'mod bashrc'
+git pull
+git push origin master
+git status
+alias
+alias gw
+alias animal
+sudo su -
+sudo su -
+sudo su -
+tracejob 382678
+sudo su -
+cd .ssh
+sudo su -
+ssh peswebha.ecorp.cat.com
+nslookup 
+nslookup pesweb.ecorp.cat.com
+ssh skrivsm@pesweb.ecorp.cat.com
+sudo su -
+passwd
+ssh 172.22.16.101 
+ssh mtapachep4.lrd.cat.com
+ssh pesweb
+ssh pesweb.ecorp.cat.com
+crontab -e
+crontab -l
+crontab -e
+crontab -l
+crontab /var/spool/cron/skrivsm
+cat /var/spool/cron/skrivsm
+crontab -l
+crontab 
+crontab -l
+sudo -l
+ssh ssh dhpch1.uk.cat.com
+ssh dhpch1.uk.cat.com
+ping dhhpch1.uk.cat.com
+ping dhpch1.uk.cat.com
+ping dxhpch1.uk.cat.com
+ping -c 3 dhhpch1.uk.cat.com
+ping -c 3 dxhpch1.uk.cat.com
+ssh dxhpch1.uk.cat.com
+sudo -l
+ps -ef | grep apache
+cd /apps/odbtounv/
+cd 681/
+./odbtounv
+./odbtounv -h
+cd /apps/odbtounv/681/
+cd ..
+./odbtounv.sh 
+export DISPLAY=C001318676.mw.na.cat.com:0.0
+./odbtounv.sh 
+export DISPLAY=localhost:0.0
+./odbtounv.sh 
+cd /apps/odbtounv/681/
+./odbtounv
+/apps/odbtounv/odbtounv.sh 
+/apps/odbtounv/odbtounv.sh 
+alias ssh
+ls -lart
+cd etc/bash/aliases/
+vi caterpillar.sh 
+. .bashrc
+alias ssh
+cd etc
+git status
+/apps/odbtounv/odbtounv.sh 
+export infile=/tmp/my.infile
+if [[ ! -r $infile ]]; then echo "File $infile is not readable."; fi
+export outfile=/tmp/my.outfile
+if [[ ! -r $outfile ]]; then echo "File $outfile is not readable."; fi
+if [[ ! -w $outfile ]]; then echo "File $outfile is not writeable."; fi
+touch /tmp/my.outfile
+if [[ ! -w $outfile ]]; then echo "File $outfile is not writeable."; fi
+echo $?
+touch $outfile
+echo $?
+touch $outfile && echo $?
+touch $outfile; echo $?
+touch /tmp/input.odb
+for h in dxhpch1 dxhpch2 dxhpcv1 dxhpcv2; do  echo "# $h"; ssh skrivsm@$h.uk.cat.com; done
+alias sshv
+alias sshv='ssh -vvv -o LogLevel=DEBUG3'
+cd .ssh
+cd etc/
+git status
+git push
+mkdir scratch
+cd scratch/
+/home/hpc/bin/odbtounv.sh 
+/home/hpc/bin/odbtounv.sh -t 6101 -O -s -S ~/scratch/block_with_hole.odb -T ~/scratch/block_with_hole.unv
+file *
+vi *.unv
+cd etc/
+git status
+git add .
+git commit -m 'mod caterpillar.sh'
+git pull
+cd bash/aliases/
+vi caterpillar.sh 
+git 
+git pull
+git merge caterpillar.sh
+git status
+git add .
+git merge caterpillar.sh
+git status
+git commit -m 'merge caterpillar.sh; add pcs.sh, ssh.sh'
+git pull
+git push origin master
+git status
+. .bashrc
+alias
+cd etc
+git pull
+. .bashrc
+alias
+sshv dxhpch1.uk.cat.com
+cd /home/hpc/etc/
+cat *_head.hosts
+cat vis.hosts 
+cd tmp/
+sudo rpm -Uvh ctags-5.8-1.i386.rpm
+cd etc/
+git status
+git pull
+git push
+cd etc
+git status
+git pull
+git push
+./.symlink_it.sh 
+git status
+cd src
+cd RPM/
+ll ../SOURCES/
+history | grep rpm
+cd toolbox/bin/
+grep '-ax' *.sh
+grep '-a' *.sh
+cd pssh.d/
+ll -lart
+vi pssh_adhoc_command.sh
+cat /etc/yum.repos.d/epel.repo 
+sudo yum repolist
+cd scratch/
+cp /home/hpc/sysadmin/pkill* .
+cd scratch/
+cat pkill_non-system_users.sh 
+touch kill_non-system_processes.sh
+chmod +x *.sh
+emacs &
+emacs&
+cd scratch/
+cat pkill_non-system_users.sh 
+grep shopt ~/toolbox/bin/*.sh
+cat /proc/meminfo 
+cat pkill_non-system_users.sh 
+who
+ps -ef | grep /usr/bin/perl
+ps -ef | awk '{print $1}' | sort -u
+ps -ef | grep 28383
+ps -ef | grep -E '^ecompute'
+ps -ef | grep PBS
+ps -ef | grep UID
+man ps
+ps -e
+ps aux
+ps aux | grep ecompute
+ps au | grep ecompute
+ps -ef | grep ecompute
+declare -ax Pecompute=( `ps -ef | grep -E '^ecompute'` )
+echo ${Pecompute[@]}
+echo ${Pecompute[1]}
+echo ${Pecompute[2]}
+echo ${Pecompute[3]}
+declare -ax Pecompute=( `ps -ef | grep -E '^ecompute' | awk '{print $2}` )
+declare -ax Pecompute=( `ps -ef | grep -E '^ecompute' | awk '{print $2}'` )
+echo ${Pecompute[@]}
+ps -ef | less
+man ps
+cd scratch/
+sudo su -
+vi ps_log_sorted_unique.txt 
+ps -ef | less
+ps -ef | grep -Ev "(^root|^ecompute)"
+EXCL_1="(daemon|hald|httpd|inetd|passwd)"
+EXCL_2="(^[a-z][0-                                                                   9]|coopeg|UID|dbus|ecompute|nobody|rpc|ntp|nscd|firebird|smmsp|apache|root|skrivsm|agabd|dennymj|marshcm|crumrjp)"
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2"
+EXCL_2="(^([a-z][0-                                                                   9]|coopeg|UID|dbus|ecompute|nobody|rpc|ntp|nscd|firebird|smmsp|apache|root|skrivsm|agabd|dennymj|marshcm|crumrjp))"
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2"
+ps -ef | grep daemon
+EXCL_1="(daemon|hald|httpd|inetd|passwd)"
+EXCL_2="(^([0-9]+|[a-z][0-9]|coopeg|UID|dbus|ecompute|nobody|rpc|ntp|nscd|firebird|smmsp|apache|root|skrivsm|agabd|dennymj|marshcm|crumrjp))"
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2"
+ps -ef | grep -E -v "$EXCL_1" | awk '{print $1}' | grep -E -v "$EXCL_2" | sort -u 
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $2}' | sort -u 
+EXCL_1="(daemon|hald|httpd|inetd|passwd)"
+EXCL_2="(^([0-9]+|[a-z][0-                                                            9]|coopeg|UID|dbus|ecompute|nobody|rpc|ntp|nscd|firebird|smmsp|apache|root|skrivsm|agabd|dennymj|marshcm|crumrjp))"
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $2}' | sort -u |   tee /tmp/non-system_procs.list
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2"
+for p in `cat /tmp/non-system_procs.list`; do   kill $p; done
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2"
+sudo su -
+cd scratch/
+cat pkill_non-system_users.sh 
+vi pkill_non-system_users.sh 
+cat kill_non-system_processes.sh 
+EXCL_1="(daemon|hald|httpd|inetd|passwd)"
+EXCL_2="(^([0-9]|[a-z][0-9]|coopeg|UID|dbus|ecompute|nobody|rpc|ntp|nscd|firebird|smmsp|apache|root|skrivsm|agabd|den
+EXCL_1="(daemon|hald|httpd|inetd|passwd)"
+EXCL_2="(^([0-9]|[a-z][0-                                                                                            9]|coopeg|UID|dbus|ecompute|nobody|rpc|ntp|nscd|firebird|smmsp|apache|root|skrivsm|agabd|dennymj|marshcm|crumrjp))"
+ps -ef | grep -E -v "$EXCL_1" 
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" 
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $2}' 
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $2}' | sort -u 
+ps -ef | grep -E -v "$EXCL_1"
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" 
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $1}' 
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $1}' | sort -u 
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2"
+cat /tmp/connected.list 
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $2}' | sort -u > /tmp/non-system_procs.list
+ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $1}' | sort -u > /tmp/connected.list
+sudo su -
+grep -i lafayette *
+qstat
+man qstat
+ps -ef | grep defunct
+pkill defunct
+ps -ef | grep defunct
+sudo pkill -f defunct
+ps -ef | grep defunct
+sudo kill 23900
+ps -ef | grep defunct
+sudo kill -9 23900
+ps -ef | grep defunct
+cd scratch/
+touch qstat_mini_report.sh
+chmod +x *.sh
+vi qstat_mini_report.sh 
+cd scratch/
+while /bin/true; do ps -ef | tee -a /home/skrivsm/scratch/processes_parse_for_ecompute_exclusions.txt ; done
+while /bin/true; do sleep 5; ps -ef | tee -a /home/skrivsm/scratch/processes_parse_for_ecompute_exclusions.txt ; done
+qstat -f
+qstat -f | sed -e /Job Id:/d -e /umask =/G | sed -e '/./{H;$ !d;}' -e 'x;/exec_host/!d;'
+qstat -f | sed -e /Job Id:/d -e /umask =/G | sed -e '/./{H;$!d;}' -e 'x;/exec_host/!d;'
+qstat -f | sed -e '/Job Id:/d' -e '/umask =/G' | sed -e '/./{H;$!d;}' -e 'x;/exec_host/!d;'
+qstat -f
+qstat -f | grep PBS_O_LOGNAME=
+qstat -f | grep PBS_O_LOGNAME= | sort -u
+qstat -f
+qstat -f | grep -E "(Job Id:|Job_Name|Job_Owner|job_state|queue|exec_host|Resource_List.software)"
+./qstat_mini_report.sh 
+./qstat_mini_report.sh | grep vis
+qstat -f | grep server
+./qstat_mini_report.sh 
+./qstat_mini_report.sh | grep exec
+./qstat_mini_report.sh | less
+/home/hpc/bin/odbtounv.sh 
+/home/hpc/bin/odbtounv.sh -t 6101
+export DISPLAY=localhost:0.0
+/home/hpc/bin/odbtounv.sh -t 6101
+export DISPLAY=localhost:0.0
+/home/hpc/bin/odbtounv.sh -t 6101
+cd scratch/
+rm -f *kill*
+rm -f chk_top_processes_report.sh gen_process_names_list.sh poor-mans-cron.sh rsync_to_n1mwdh1.sh 
+cat processes_parse_for_ecompute_exclusions.txt | sort -u > ps_log_sorted_unique.txt 
+vi ps_log_sorted_unique.txt 
+cat processes_parse_for_ecompute_exclusions.txt | sort -u | grep -v sleep > ps_log_sorted_unique.txt 
+cat processes_parse_for_ecompute_exclusions.txt | grep -v sleep | sort -u  > ps_log_sorted_unique.txt 
+vi ps_log_sorted_unique.txt 
+qstat -f
+qstat -f | grep 95302
+qstat -f | grep Resource_list.
+qstat -f | grep Resource_list
+qstat -f | grep Resource_List
+qstat -f 
+qstat -f 388934
+qstat -f | grep Resource_List.place
+qstat -f | grep Resource_List.place | sort -u
+qstat -f | grep queue | sort -u
+cat /home/hpc/bin/chk_top_processes_gather.sh 
+rm -f qstat_mini_report.sh 
+cd scratch/
+./qstat_mini_report.sh 
+qstat -f
+vi qstat_mini_report.sh 
+./qstat_mini_report.sh 
+vi qstat_mini_report.sh 
+./qstat_mini_report.sh 
+./qstat_mini_report.sh | grep pn
+./qstat_mini_report.sh 
+./qstat_mini_report.sh | grep software
+./qstat_mini_report.sh | grep software | sort -u
+./qstat_mini_report.sh | grep vis
+./qstat_mini_report.sh | grep Job_Owner | sort -u
+vi qstat_mini_report.sh 
+cp qstat_mini_report.sh ~/toolbox/bin/
+sudo su -
+cd toolbox/
+git status
+cd bin
+ll -lart
+rm -f 6101
+git status
+git add .
+chmod +x *.sh
+git status
+git commit -m 'add scripts from /home/hpc'
+git pull
+git push
+cd toolbox/bin/
+vi qstat_mini_report.sh 
+qstat
+qstat -f 388942 388943
+vi qstat_mini_report.sh 
+./qstat_mini_report.sh 
+./qstat_mini_report.sh 388952 388951
+git status
+qstat_mini_report.sh 
+git add .
+git commit -m 'pass operands to qstat if they exist'
+qstat_mini_report.sh | grep 'Job Id'
+qstat_mini_report.sh | grep 'Job Id' | cut -d':' -f2
+qstat_mini_report.sh | grep 'Job Id' | cut -d':' -f2 | sed 's/[ \t]//g'
+qstat_mini_report.sh | grep 'Job Id' | cut -d':' -f2 | sed 's/[ \t]//g' | sort -n -u
+qstat_mini_report.sh | grep 'Job Id' | cut -d':' -f2 | sed 's/[ \t]//g' | sort -n -u | tee /tmp/pbs_jobs.list
+sudo su -
+cd scratch/results/
+qstat_mini_report.sh 
