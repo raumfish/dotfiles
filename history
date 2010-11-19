@@ -1275,3 +1275,30 @@ git status
 git status etc/
 cd etc
 git status
+cd scratch/
+file node*
+sqlite3 node_top.db ".dump"
+sqlite3 node_top.db "select * from sqlite_master"
+cd etc/
+git status
+git add .
+git commit -m 'mod history'
+cd toolbox/
+git status
+git add .
+git commit -m 'mod bin/chk_top_processes_gather.sh'
+/home/hpc/bin/odbtounv.sh -6101
+/home/hpc/bin/odbtounv.sh -t 6101
+sudo su -
+qstat_mini_report.sh 
+qstat_mini_report.sh | less
+sudo su -
+cd scratch/
+ll results/
+rm =rf results/
+rm -rf results/
+sudo rm -rf results/
+sudo cp /home/hpc/pssh/results/ .
+sudo cp -r /home/hpc/pssh/results .
+sudo chown -R skrivsm:spd results/
+sudo su -
