@@ -1,349 +1,3 @@
-ll
-scp -rp ncc01905.fpd.cat.com:./etc/ .
-scp -rp ncc01905.fpd.cat.com:./toolbox/ .
-ll
-ll
-cd etc/
-ll
-ls -la
-./.symlink_it.sh
-cd
-ll
-ls -lart
-ll ssh
-ll .ssh
-ll .ssh/alt
-cd
-. .bashrc
-echo $DISPLAY
-xterm
-cd /
-cd apps
-cd Fluent/ansys_inc/fluent/
-cd ..
-ll v130
-cd v130/fluent/
-cd bin
-./fluent
-cd ../..
-cd ../
-cd v121/fluent/bin/
-./fluent
-sudo su -
-cd etc/
-git status
-git pull
-git push
-cd toolbox/
-git status
-git pull
-git push
-ll bin
-rm -rf bin
-ln -s ~/toolbox/bin bin
-cd pssh/
-ll scripts/
-rm -rf scripts/
-ln -s ~/toolbox/bin/ scripts
-emacs
-rpm -e emacs
-rpm -qa emacs
-sudo su -
-ftp caomai.com
-sudo su -
-cd src
-gzip -d App-ClusterSSH-4.00_06.tar.gz 
-tar -tvf App-ClusterSSH-4.00_06.tar 
-tar -xvf App-ClusterSSH-4.00_06.tar 
-cd App-ClusterSSH-4.00_06
-sudo su -
-export DISPLAY=c001318676.mw.na.cat.com:11.0
-xterm
-export DISPLAY=c001318676.mw.na.cat.com:0.0
-xterm
-export DISPLAY=c001318676.mw.na.cat.com:0.0
-xterm
-export DISPLAY=c001318676.mw.na.cat.com:10.0
-xterm
-sudo su -
-cd src/
-sudo su -
-mkdir bak
-mv hpc/hosts.orig.2010-10-01 bak/
-cd /
-cd /home
-sudo su -
-cd 0_hpc/
-touch junk
-rm -f junk
-git init
-git info
-git log
-ls -la
-cd /home/0_hpc/
-rm -rf .git
-sudo su -
-git init
-git info
-git 
-git log
-git status
-git add .
-git status
-vi .gitignore
-git status
-git add .
-git status
-git commit -m 'initial commit with hosts file'
-mkdir man
-mkdir sysadmin
-chmod o-r,o-x sysadmin/
-pdsh -v
-pdsh -V
-sudo su -
-rm -rf .git
-git status
-ls -la
-mv ref/ etc/
-ll etc
-cd etc/
-grep vis hosts 
-grep vis hosts > vis.hosts
-grep pn hosts 
-grep pn hosts > pn.hosts
-grep dn hosts 
-grep dn hosts > dn.hosts
-grep mw hosts 
-grep mwd hosts 
-grep mwd hosts > mwd.hosts
-grep mwp hosts > mwp.hosts
-cd ..
-cat .gitignore 
-cd etc/
-touch machines
-cat hosts > machines 
-sudo su -
-cd /usr/lib
-ll | grep read
-cd /usr/lib/openmpi/1.3.2-gcc/bin/
-env | grep LD_LIB
-sudo su -
-env | grep central
-sudo su -
-env | grep "(LIBRARY|PATH)"
-env | grep -E "(LIBRARY|PATH)"
-sudo su -
-cd src/
-mkdir ISO
-mkdir RPM
-mv *.rpm RPM/
-mkdir SOURCES
-mv *.gz SOURCES/
-mkdir config
-mv *.conf* config/
-gzip *.tar
-mv *.gz SOURCES/
-cd ISO/
-ls -kh
-ls -lkh
-sudo su -
-echo $MANPATH
-which pdsh
-sudo su -
-ping ntp.corp.cat.com
-hostname
-who
-sudo su -
-which pdsh
-sudo su -
-sudo su -
-exec env ENV='' PROMPT_COMMAND='' PS1=\#\$\  PS2='' PS3='' /bin/sh
-sudo su -
-ls -la
-sudo chown skrivsm:spd .toprc 
-top
-cd etc/
-git status
-git pull
-git status
-git pull
-git push
-cd 
-cd etc/
-cd .ssh/
-vi id_rsa*
-vi id_dsa*
-ll id*
-cat id_dsa.pub
-sudo su -
-history | grep pdsh
-pdsh -v
-pdsh -a 'uname -a' | dshbak
-sudo su -
-ssh root@n1mwph1
-cd .ss
-cd .ssh
-cat id_dsa.pub
-cat hpc_id_dsa.pub
-cd .ssh
-cat hpc_id_dsa.pub >> authorized_keys
-sudo su -
-qstat
-locate qstat
-/usr/pbs/bin/qstat
-vi .bashrc
-cd etc
-git
-git status
-git add .
-git commit -m 'mod bashrc'
-git pull
-git push
-vi .bashrc
-which psh
-. .bashrc
-which psh
-psh vis uptime
-sudo su -
-ping vis02
-psh compute hostname
-sudo su -
-export DISPLAY=172.20.212.148:0.0
-emacs
-export DISPLAY=172.20.212.148:0.0
-sudo su -
-emacs
-echo $DISPLAY
-sudo su -
-xterm
-sudo su -
-mount
-sudo su -
-sudo su -
-top
-who
-ssh skrivsm@pesweb.ecorp.cat.com
-ssh --verbose  skrivsm@pesweb.ecorp.cat.com
-passwd
-sudo su -
-ssh skrivsm@mtapachep4.lrd.cat.com
-ssh pesweb
-ssh pesweb.corp.cat.com
-nslookup 
-cd etc
-git status
-git add .
-git commit -m 'mod bashrc'
-git pull
-git push origin master
-git status
-alias
-alias gw
-alias animal
-sudo su -
-sudo su -
-sudo su -
-tracejob 382678
-sudo su -
-cd .ssh
-sudo su -
-ssh peswebha.ecorp.cat.com
-nslookup 
-nslookup pesweb.ecorp.cat.com
-ssh skrivsm@pesweb.ecorp.cat.com
-sudo su -
-passwd
-ssh 172.22.16.101 
-ssh mtapachep4.lrd.cat.com
-ssh pesweb
-ssh pesweb.ecorp.cat.com
-crontab -e
-crontab -l
-crontab -e
-crontab -l
-crontab /var/spool/cron/skrivsm
-cat /var/spool/cron/skrivsm
-crontab -l
-crontab 
-crontab -l
-sudo -l
-ssh ssh dhpch1.uk.cat.com
-ssh dhpch1.uk.cat.com
-ping dhhpch1.uk.cat.com
-ping dhpch1.uk.cat.com
-ping dxhpch1.uk.cat.com
-ping -c 3 dhhpch1.uk.cat.com
-ping -c 3 dxhpch1.uk.cat.com
-ssh dxhpch1.uk.cat.com
-sudo -l
-ps -ef | grep apache
-cd /apps/odbtounv/
-cd 681/
-./odbtounv
-./odbtounv -h
-cd /apps/odbtounv/681/
-cd ..
-./odbtounv.sh 
-export DISPLAY=C001318676.mw.na.cat.com:0.0
-./odbtounv.sh 
-export DISPLAY=localhost:0.0
-./odbtounv.sh 
-cd /apps/odbtounv/681/
-./odbtounv
-/apps/odbtounv/odbtounv.sh 
-/apps/odbtounv/odbtounv.sh 
-alias ssh
-ls -lart
-cd etc/bash/aliases/
-vi caterpillar.sh 
-. .bashrc
-alias ssh
-cd etc
-git status
-/apps/odbtounv/odbtounv.sh 
-export infile=/tmp/my.infile
-if [[ ! -r $infile ]]; then echo "File $infile is not readable."; fi
-export outfile=/tmp/my.outfile
-if [[ ! -r $outfile ]]; then echo "File $outfile is not readable."; fi
-if [[ ! -w $outfile ]]; then echo "File $outfile is not writeable."; fi
-touch /tmp/my.outfile
-if [[ ! -w $outfile ]]; then echo "File $outfile is not writeable."; fi
-echo $?
-touch $outfile
-echo $?
-touch $outfile && echo $?
-touch $outfile; echo $?
-touch /tmp/input.odb
-for h in dxhpch1 dxhpch2 dxhpcv1 dxhpcv2; do  echo "# $h"; ssh skrivsm@$h.uk.cat.com; done
-alias sshv
-alias sshv='ssh -vvv -o LogLevel=DEBUG3'
-cd .ssh
-cd etc/
-git status
-git push
-mkdir scratch
-cd scratch/
-/home/hpc/bin/odbtounv.sh 
-/home/hpc/bin/odbtounv.sh -t 6101 -O -s -S ~/scratch/block_with_hole.odb -T ~/scratch/block_with_hole.unv
-file *
-vi *.unv
-cd etc/
-git status
-git add .
-git commit -m 'mod caterpillar.sh'
-git pull
-cd bash/aliases/
-vi caterpillar.sh 
-git 
-git pull
-git merge caterpillar.sh
-git status
-git add .
-git merge caterpillar.sh
-git status
-git commit -m 'merge caterpillar.sh; add pcs.sh, ssh.sh'
-git pull
-git push origin master
 git status
 . .bashrc
 alias
@@ -1262,3 +916,85 @@ gw
 root_gw
 cd scratch/
 sqlite3 node_top.db
+cd scratch/
+cat doe_job_list.txt 
+rm -f doe_job_list.txt 
+rm -f node_top.db 
+cat qstat-f.sam 
+ll results_processes.sam/
+ps -ef 
+CAPTURE="(analysis|explicit.*\.exe|cortex\.|standard.*\.exe|pre\.exe|qsub|pbs_|mpid|fluent|radtherm|xfd|mfm\.exe|n1mwph|n1mwdh)" 
+top -b -n 1 | grep -i -E "$CAPTURE"
+top -b -n 1
+gw
+cd etc/
+git status
+git pull
+git status
+git push
+./.symlink_it.sh 
+cat etc/history 
+cat history >> etc/history 
+ls -lart
+ls -lart | grep bash
+cd etc/
+vi .symlink_it.sh 
+./.symlink_it.sh 
+ls -lart
+cd etc
+git status
+git add .
+git commit -m 'mod symlink_it.sh for correct history linking; concatenate history from chinkapin'
+ls -lart
+rm -f .history 
+cd etc
+./.symlink_it.sh 
+git pull
+git push
+gw
+ssh n1mwdh1
+git status
+git pull
+cd scratch/
+gw
+root_gw 
+root_gw
+gw
+root_gw
+gw
+root_gw
+cd scratch/
+sqlite3 node_top.db
+gw
+ll results_processes.sam/
+cat results_processes.sam/pn252
+cd toolbox/
+git status
+git pull
+git push
+cd scratch/
+cat ~/toolbox/bin/chk_top_processes_report.sh 
+root_gw
+man sqlite3
+sudo yum -y update
+sudo su -
+pidgin
+root_gw
+history | grep ssh dxhpch1
+ssh dxhpch1
+. .barthd
+root_gw
+sudo yum -y update
+sudo yum -y updat
+sudo yum -y update
+root_gw
+root_gw
+root_gw
+gw
+root_gw
+cd scratch/
+ifconfig
+ruby -v
+irb
+cd Dropbox/Ref/Programming/Ruby/
+root_gw
