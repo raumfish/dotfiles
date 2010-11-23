@@ -1,177 +1,3 @@
-declare -ax Pecompute=( `ps -ef | grep -E '^ecompute'` )
-echo ${Pecompute[@]}
-echo ${Pecompute[1]}
-echo ${Pecompute[2]}
-echo ${Pecompute[3]}
-declare -ax Pecompute=( `ps -ef | grep -E '^ecompute' | awk '{print $2}` )
-declare -ax Pecompute=( `ps -ef | grep -E '^ecompute' | awk '{print $2}'` )
-echo ${Pecompute[@]}
-ps -ef | less
-man ps
-cd scratch/
-sudo su -
-vi ps_log_sorted_unique.txt 
-ps -ef | less
-ps -ef | grep -Ev "(^root|^ecompute)"
-EXCL_1="(daemon|hald|httpd|inetd|passwd)"
-EXCL_2="(^[a-z][0-                                                                   9]|coopeg|UID|dbus|ecompute|nobody|rpc|ntp|nscd|firebird|smmsp|apache|root|skrivsm|agabd|dennymj|marshcm|crumrjp)"
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2"
-EXCL_2="(^([a-z][0-                                                                   9]|coopeg|UID|dbus|ecompute|nobody|rpc|ntp|nscd|firebird|smmsp|apache|root|skrivsm|agabd|dennymj|marshcm|crumrjp))"
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2"
-ps -ef | grep daemon
-EXCL_1="(daemon|hald|httpd|inetd|passwd)"
-EXCL_2="(^([0-9]+|[a-z][0-9]|coopeg|UID|dbus|ecompute|nobody|rpc|ntp|nscd|firebird|smmsp|apache|root|skrivsm|agabd|dennymj|marshcm|crumrjp))"
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2"
-ps -ef | grep -E -v "$EXCL_1" | awk '{print $1}' | grep -E -v "$EXCL_2" | sort -u 
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $2}' | sort -u 
-EXCL_1="(daemon|hald|httpd|inetd|passwd)"
-EXCL_2="(^([0-9]+|[a-z][0-                                                            9]|coopeg|UID|dbus|ecompute|nobody|rpc|ntp|nscd|firebird|smmsp|apache|root|skrivsm|agabd|dennymj|marshcm|crumrjp))"
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $2}' | sort -u |   tee /tmp/non-system_procs.list
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2"
-for p in `cat /tmp/non-system_procs.list`; do   kill $p; done
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2"
-sudo su -
-cd scratch/
-cat pkill_non-system_users.sh 
-vi pkill_non-system_users.sh 
-cat kill_non-system_processes.sh 
-EXCL_1="(daemon|hald|httpd|inetd|passwd)"
-EXCL_2="(^([0-9]|[a-z][0-9]|coopeg|UID|dbus|ecompute|nobody|rpc|ntp|nscd|firebird|smmsp|apache|root|skrivsm|agabd|den
-EXCL_1="(daemon|hald|httpd|inetd|passwd)"
-EXCL_2="(^([0-9]|[a-z][0-                                                                                            9]|coopeg|UID|dbus|ecompute|nobody|rpc|ntp|nscd|firebird|smmsp|apache|root|skrivsm|agabd|dennymj|marshcm|crumrjp))"
-ps -ef | grep -E -v "$EXCL_1" 
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" 
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $2}' 
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $2}' | sort -u 
-ps -ef | grep -E -v "$EXCL_1"
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" 
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $1}' 
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $1}' | sort -u 
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2"
-cat /tmp/connected.list 
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $2}' | sort -u > /tmp/non-system_procs.list
-ps -ef | grep -E -v "$EXCL_1" | grep -E -v "$EXCL_2" | awk '{print $1}' | sort -u > /tmp/connected.list
-sudo su -
-grep -i lafayette *
-qstat
-man qstat
-ps -ef | grep defunct
-pkill defunct
-ps -ef | grep defunct
-sudo pkill -f defunct
-ps -ef | grep defunct
-sudo kill 23900
-ps -ef | grep defunct
-sudo kill -9 23900
-ps -ef | grep defunct
-cd scratch/
-touch qstat_mini_report.sh
-chmod +x *.sh
-vi qstat_mini_report.sh 
-cd scratch/
-while /bin/true; do ps -ef | tee -a /home/skrivsm/scratch/processes_parse_for_ecompute_exclusions.txt ; done
-while /bin/true; do sleep 5; ps -ef | tee -a /home/skrivsm/scratch/processes_parse_for_ecompute_exclusions.txt ; done
-qstat -f
-qstat -f | sed -e /Job Id:/d -e /umask =/G | sed -e '/./{H;$ !d;}' -e 'x;/exec_host/!d;'
-qstat -f | sed -e /Job Id:/d -e /umask =/G | sed -e '/./{H;$!d;}' -e 'x;/exec_host/!d;'
-qstat -f | sed -e '/Job Id:/d' -e '/umask =/G' | sed -e '/./{H;$!d;}' -e 'x;/exec_host/!d;'
-qstat -f
-qstat -f | grep PBS_O_LOGNAME=
-qstat -f | grep PBS_O_LOGNAME= | sort -u
-qstat -f
-qstat -f | grep -E "(Job Id:|Job_Name|Job_Owner|job_state|queue|exec_host|Resource_List.software)"
-./qstat_mini_report.sh 
-./qstat_mini_report.sh | grep vis
-qstat -f | grep server
-./qstat_mini_report.sh 
-./qstat_mini_report.sh | grep exec
-./qstat_mini_report.sh | less
-/home/hpc/bin/odbtounv.sh 
-/home/hpc/bin/odbtounv.sh -t 6101
-export DISPLAY=localhost:0.0
-/home/hpc/bin/odbtounv.sh -t 6101
-export DISPLAY=localhost:0.0
-/home/hpc/bin/odbtounv.sh -t 6101
-cd scratch/
-rm -f *kill*
-rm -f chk_top_processes_report.sh gen_process_names_list.sh poor-mans-cron.sh rsync_to_n1mwdh1.sh 
-cat processes_parse_for_ecompute_exclusions.txt | sort -u > ps_log_sorted_unique.txt 
-vi ps_log_sorted_unique.txt 
-cat processes_parse_for_ecompute_exclusions.txt | sort -u | grep -v sleep > ps_log_sorted_unique.txt 
-cat processes_parse_for_ecompute_exclusions.txt | grep -v sleep | sort -u  > ps_log_sorted_unique.txt 
-vi ps_log_sorted_unique.txt 
-qstat -f
-qstat -f | grep 95302
-qstat -f | grep Resource_list.
-qstat -f | grep Resource_list
-qstat -f | grep Resource_List
-qstat -f 
-qstat -f 388934
-qstat -f | grep Resource_List.place
-qstat -f | grep Resource_List.place | sort -u
-qstat -f | grep queue | sort -u
-cat /home/hpc/bin/chk_top_processes_gather.sh 
-rm -f qstat_mini_report.sh 
-cd scratch/
-./qstat_mini_report.sh 
-qstat -f
-vi qstat_mini_report.sh 
-./qstat_mini_report.sh 
-vi qstat_mini_report.sh 
-./qstat_mini_report.sh 
-./qstat_mini_report.sh | grep pn
-./qstat_mini_report.sh 
-./qstat_mini_report.sh | grep software
-./qstat_mini_report.sh | grep software | sort -u
-./qstat_mini_report.sh | grep vis
-./qstat_mini_report.sh | grep Job_Owner | sort -u
-vi qstat_mini_report.sh 
-cp qstat_mini_report.sh ~/toolbox/bin/
-sudo su -
-cd toolbox/
-git status
-cd bin
-ll -lart
-rm -f 6101
-git status
-git add .
-chmod +x *.sh
-git status
-git commit -m 'add scripts from /home/hpc'
-git pull
-git push
-cd toolbox/bin/
-vi qstat_mini_report.sh 
-qstat
-qstat -f 388942 388943
-vi qstat_mini_report.sh 
-./qstat_mini_report.sh 
-./qstat_mini_report.sh 388952 388951
-git status
-qstat_mini_report.sh 
-git add .
-git commit -m 'pass operands to qstat if they exist'
-qstat_mini_report.sh | grep 'Job Id'
-qstat_mini_report.sh | grep 'Job Id' | cut -d':' -f2
-qstat_mini_report.sh | grep 'Job Id' | cut -d':' -f2 | sed 's/[ \t]//g'
-qstat_mini_report.sh | grep 'Job Id' | cut -d':' -f2 | sed 's/[ \t]//g' | sort -n -u
-qstat_mini_report.sh | grep 'Job Id' | cut -d':' -f2 | sed 's/[ \t]//g' | sort -n -u | tee /tmp/pbs_jobs.list
-sudo su -
-cd scratch/results/
-qstat_mini_report.sh 
-cd toolbox/
-ll resource/
-cd resource/
-scp root@ncc01905.fpd.cat.com:/usr/share/emacs/site-lisp/lusty* .
-rm -f *.elc
-sudo cp lusty-explorer.el /usr/share/emacs/site-lisp/
-emacs
-vi bin/start_synergy.sh 
-ls -la
-cd bin
-ll *.sh
-emacs version.sh
-s ncc01905.fpd.cat.com
 vi .emacs
 vi .vimrc
 sudo su -
@@ -1064,4 +890,111 @@ vi qstat-a-n-s.txt
 root_gw
 gw
 vi qstat-a-n-s.txt
+gw
+mount
+ssh n1mwdh1
+sudo su -
+cd Dropbox/Ref/Caterpillar/High_Performance_Computing/
+scp verify_accounts.rb n1mwph1.corp.cat.com:./bin
+gw
+cd scratch/
+scp n1mwph1:/etc/passwd passwd_n1mwph1_2010-11-23
+cp ~/Dropbox/Ref/Caterpillar/High_Performance_Computing/verify_accounts.rb .
+chmod +x *.rb
+vi verify_accounts.rb 
+ruby verify_accounts.rb 
+ln -s passwd_n1mwph1_2010-11-23 passwd
+ruby verify_accounts.rb 
+ruby verify_accounts.rb | grep not
+ruby verify_accounts.rb | grep not | awk '{print $1}' | sort 
+ruby verify_accounts.rb | grep not | sort | tee /tmp/users_not_in_cws.list
+ruby verify_accounts.rb | grep not | awk '{print $1}' | sort | tee /tmp/users_not_in_cws.list
+vi verify_accounts.rb 
+cd bin
+ll *.rb
+cp ~/scratch/verify_accounts.rb  .
+ll *.rb
+git status
+git add .
+git commit -m 'add verify_accounts.rb -- from Mike Stahnke'
+git pull
+git push
+cd scratch/
+rm -f verify_accounts.rb 
+vi bin/verify_accounts.rb 
+cd bin
+cp verify_accounts.rb ~/
+git rm verify_accounts.rb
+git status
+git commit -m 'del'
+git pull
+git push
+vi verify_accounts.rb 
+ruby verify_accounts.rb 
+ruby verify_accounts.rb | grep -E "(not|alias)"
+grep kapica ~/scratch/passwd
+ruby verify_accounts.rb | grep -E "(not|alias)" | tee ~/scratch/user_alias_and_not.list
+grep alias ~/scratch/user_alias_and_not.list | sort -u
+grep alias ~/scratch/user_alias_and_not.list | awk '{print $1}' | sort -u
+grep vcsa ~/scratch/passwd
+grep cain ~/scratch/passwd
+grep nx ~/scratch/passwd
+grep xfs ~/scratch/passwd
+grep not ~/scratch/user_alias_and_not.list | awk '{print $1}' | sort -u > ~/user_not_CWS.list
+vi ~/user_not_CWS.list 
+grep cain ~/scratch/*
+ruby ~/verify_accounts.rb | tee ~/scratch/all.list
+grep cain ~/scratch/all.list 
+cd ~/scratch/
+vi user_alias_and_not.list 
+ll -lart
+mv user_not_CWS.list ~/scratch/
+cd scratch/
+vi user_not_CWS.list 
+mv user_not_CWS.list mwhpc_uid_not_CWS.list
+cp mwhpc_uid_not_CWS.list ~/Dropbox/Ref/Caterpillar/High_Performance_Computing/
+ssh n1mwvis04
+gw
+alias
+ssh n1mwdh1.corp.cat.com
+ssh-copy-id n1mwdh1.corp.cat.com
+ssh n1mwdh1.corp.cat.com
+vi .ssh/config 
+gw
+sshv n1mwph1.corp.cat.com
+ssh-copy-id 
+ssh-copy-id -i /home/skrivsm/.ssh/hpc_id_dsa n1mwph1.corp.cat.com
+sshv n1mwph1.corp.cat.com
+vi .ssh/config 
+gw
+ll .ssh
+vi .ssh/config
+cd .ssh
+rm -f config
+gw
+sshv n1mwph1
+cd etc
+git status
+vi ssh/config
+./.symlink_it.sh 
+gw
+git status
+git add .
+git commit -m 'seriously cut down ssh/config'
+git pull
+git push
+git status
+gw
+git pull
+gw
+ssh n1mwdh1
+gw
+cd etc
+git status
+git pull
+./.symlink_it.sh 
+ll ~/.ssh
+ssh n1mwdh1
+ssh-copy-id n1mwdh1
+ssh n1mwdh1
 gw
