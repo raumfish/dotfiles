@@ -1123,3 +1123,16 @@ python -v
 cd .ssh
 cat authorized_keys 
 >>>>>>> 4fff0d78e6d86e7f6f0cac30668d94d307a071f4:history
+cd .ssh
+rm -f authorized_keys.20090729 authorized_keys.20091202 authorized_keys.2010-03-02 authorized_keys.ldapsshkeydist authorized_keys.ldapsshkeydist.bak authorized_keys.ManagedElsewhere
+cd etc
+vi .symlink_it.sh 
+git status
+git add .
+git commit -m 'comment out authorized_keys from symlink_it script'
+git pull
+vi history 
+git add .
+git commit -m 'save history'
+git pull
+git push
