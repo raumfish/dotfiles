@@ -35,5 +35,6 @@ relink ~/.zile         ~/etc/zile
 relink ~/.curlrc       ~/etc/curlrc
 relink ~/.pssh         ~/etc/pssh
 relink ~/.parallelrc   ~/etc/parallelrc
-relink ~/history   ~/etc/history
-relink ~/.sqlite_history   ~/etc/sqlite_history
+#relink ~/history   ~/etc/history
+#relink ~/.sqlite_history   ~/etc/sqlite_history
+
