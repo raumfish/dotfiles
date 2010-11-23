@@ -22,8 +22,8 @@ relink ~/.screenrc     ~/etc/screenrc
 relink ~/.gitconfig    ~/etc/gitconfig
 relink ~/.gitignore    ~/etc/gitignore
 relink ~/.ssh/config   ~/etc/ssh/config
-relink ~/.ssh/authorized_keys   ~/etc/ssh/authorized_keys
-relink ~/.ssh/authorized_keys2   ~/etc/ssh/authorized_keys2
+#relink ~/.ssh/authorized_keys   ~/etc/ssh/authorized_keys
+#relink ~/.ssh/authorized_keys2   ~/etc/ssh/authorized_keys2
 relink ~/.ssh/known_hosts   ~/etc/ssh/known_hosts
 #relink ~/.ssh/proxyauth ~/etc/ssh/proxyauth
 relink ~/.ssh/proxy_cmd_for_github ~/etc/ssh/proxy_cmd_for_github

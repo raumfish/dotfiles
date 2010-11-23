@@ -891,6 +891,7 @@ root_gw
 gw
 vi qstat-a-n-s.txt
 gw
+<<<<<<< HEAD
 mount
 ssh n1mwdh1
 sudo su -
@@ -998,3 +999,60 @@ ssh n1mwdh1
 ssh-copy-id n1mwdh1
 ssh n1mwdh1
 gw
+=======
+cd etc
+git status
+git add .
+git commit -m 'save'
+git pull
+vi history
+git add .
+git commit -m 'save
+git pull
+git push
+git stat
+git status
+cd .ssh
+cd etc/ssh
+cp -p ~/.ssh/authorized_keys2 .
+cd ..
+vi .symlink_it.sh 
+./.symlink_it.sh 
+cd .ssh
+cat config.opt
+:q
+rm -f *~
+rm -f *.BAK
+rm -f config.opt
+cd etc
+git status
+git add .
+git commit -m 'mod symlinki_it script; add authorized_keys2'
+git pull
+git push
+cd bin
+chmod +x *.rb
+ruby verify_accounts.rb 
+ruby -v
+vi verify_accounts.rb 
+sudo su -
+sudo su -
+cd .ssh
+rm -f authorized_keys
+rm -f authorized_keys2
+cp /home/skrivsm/etc/ssh/authorized_keys .
+cp /home/skrivsm/etc/ssh/authorized_keys2 .
+vi history ssh/authorized_keys 
+git merge history
+git merge ssh/authorized_keys
+git add .
+git commit -m 'save'
+git pull
+git push
+cat /etc/passw | wc -l
+cat /etc/passwd | wc -l
+ruby -v
+perl -v
+python -v
+cd .ssh
+cat authorized_keys 
