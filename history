@@ -1066,7 +1066,6 @@ gw
 vi qstat-a-n-s.txt
 gw
 cd etc
-ll ssh
 git status
 git add .
 git commit -m 'save'
@@ -1074,8 +1073,6 @@ git pull
 vi history
 git add .
 git commit -m 'save
-;
-'
 git pull
 git push
 git stat
@@ -1110,3 +1107,19 @@ rm -f authorized_keys
 rm -f authorized_keys2
 cp /home/skrivsm/etc/ssh/authorized_keys .
 cp /home/skrivsm/etc/ssh/authorized_keys2 .
+=======
+vi history ssh/authorized_keys 
+git merge history
+git merge ssh/authorized_keys
+git add .
+git commit -m 'save'
+git pull
+git push
+cat /etc/passw | wc -l
+cat /etc/passwd | wc -l
+ruby -v
+perl -v
+python -v
+cd .ssh
+cat authorized_keys 
+>>>>>>> 4fff0d78e6d86e7f6f0cac30668d94d307a071f4:history
