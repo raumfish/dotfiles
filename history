@@ -1041,3 +1041,24 @@ gw
 vi qstat-a-n-s.txt
 gw
 >>>>>>> addb13d90bcc49cbfe2e9c9e1f8fe02f548a481d:history
+cd etc
+git
+git status
+git reset
+git status
+git add .
+git commit -m 'save'
+git pull
+vi ssh/known_hosts 
+git commit -m 'save'
+git status
+git merge ssh/known_hosts
+git status
+git add .
+git commit -m 'save'
+git status
+git pull
+git push
+cd etc
+git pull
+cat ssh/config
