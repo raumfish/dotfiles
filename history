@@ -1262,3 +1262,27 @@ gw
 root_gw
 cd scratch/
 sqlite3 node_top.db
+cd etc
+git status
+git pull
+git push
+cat history
+. .bashrc
+cd etc/
+./.symlink_it.sh 
+cd bash/local/
+rm -f *.sh
+ln -s defaults/* .
+cd ../..
+git status
+git pull
+git push
+cat history 
+cd etc/
+git status
+cd scr
+mkdir scratch
+cat .ssh/authorized_keys 
+ll -a
+cd .ssh
+vi config
