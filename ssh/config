@@ -1,62 +1,3 @@
-Host n1mw#
-  IdentityFile              ~/.ssh/hpc_id_dsa
-  IdentitiesOnly            yes
-  ForwardAgent              yes
-  ForwardX11                yes
-  Compression               no
-  CompressionLevel          6
-  CheckHostIP               no
-  TCPKeepAlive              yes
-  LogLevel                  quiet
-  StrictHostKeyChecking     no
-  NumberOfPasswordPrompts   5
-  VerifyHostKeyDNS          no
-  Protocol                  2
-  PreferredAuthentications  publickey,password
-  HostbasedAuthentication   no
-  PubkeyAuthentication      yes
-  PasswordAuthentication    yes
-
-Host dxhpc*
-  IdentityFile              ~/.ssh/hpc_id_dsa
-  IdentitiesOnly            yes
-  ForwardAgent              yes
-  ForwardX11                yes
-  Compression               no
-  CompressionLevel          6
-  CheckHostIP               no
-  TCPKeepAlive              yes
-  LogLevel                  quiet
-  StrictHostKeyChecking     no
-  NumberOfPasswordPrompts   5
-  VerifyHostKeyDNS          no
-  Protocol                  2
-  PreferredAuthentications  publickey,password
-  HostbasedAuthentication   no
-  PubkeyAuthentication      yes
-  PasswordAuthentication    yes
-
-Host pesweb-p4.lrd.cat.com
-#  IdentityFile              ~/.ssh/id_rsa
-#  IdentitiesOnly            yes
-  ForwardAgent              yes
-  ForwardX11                yes
-  Compression               yes
-  CompressionLevel          6
-  CheckHostIP               no
-  TCPKeepAlive              yes
-  LogLevel                  quiet
-  StrictHostKeyChecking     no
-  NumberOfPasswordPrompts   5
-  VerifyHostKeyDNS          no
-  Protocol                  2,1
-#  PreferredAuthentications  publickey,password
-  PreferredAuthentications  password
-  HostbasedAuthentication   no
-#  PubkeyAuthentication      yes
-  PubkeyAuthentication      no
-  PasswordAuthentication    yes
-
 Host github.com
   IdentityFile              ~/.ssh/git_id_rsa
   IdentitiesOnly            yes
@@ -68,20 +9,20 @@ Host github.com
   PubkeyAuthentication      yes
   PasswordAuthentication    no
 
-#Host *
-#  ForwardAgent              yes
-#  ForwardX11                yes
-#  Compression               yes
-#  CompressionLevel          6
-#  CheckHostIP               yes
-#  TCPKeepAlive              yes
-#  LogLevel                  verbose
-#  StrictHostKeyChecking     yes
-#  NumberOfPasswordPrompts   5
-#  VerifyHostKeyDNS          yes
-#  Protocol                  2,1
-#  PreferredAuthentications  publickey,password
-#  HostbasedAuthentication   no
-#  PubkeyAuthentication      yes
-#  PasswordAuthentication    yes
+Host *
+  ForwardAgent              yes
+  ForwardX11                yes
+  Compression               yes
+  CompressionLevel          6
+  CheckHostIP               no
+  TCPKeepAlive              yes
+  LogLevel                  quiet
+  StrictHostKeyChecking     no
+  NumberOfPasswordPrompts   5
+  VerifyHostKeyDNS          no
+  Protocol                  2,1
+  PreferredAuthentications  publickey,password
+  HostbasedAuthentication   no
+  PubkeyAuthentication      yes
+  PasswordAuthentication    yes
 

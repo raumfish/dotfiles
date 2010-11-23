@@ -17,5 +17,4 @@ if [ `hostname` = "ncc01905.fpd.cat.com" ] ; then
 fi
 
 alias gw='ssh n1mwph1.corp.cat.com'
-alias root_gw='ssh root@n1mwph1.corp.cat.com'
 
