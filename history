@@ -1,64 +1,3 @@
-git status
-. .bashrc
-alias
-cd etc
-git pull
-. .bashrc
-alias
-sshv dxhpch1.uk.cat.com
-cd /home/hpc/etc/
-cat *_head.hosts
-cat vis.hosts 
-cd tmp/
-sudo rpm -Uvh ctags-5.8-1.i386.rpm
-cd etc/
-git status
-git pull
-git push
-cd etc
-git status
-git pull
-git push
-./.symlink_it.sh 
-git status
-cd src
-cd RPM/
-ll ../SOURCES/
-history | grep rpm
-cd toolbox/bin/
-grep '-ax' *.sh
-grep '-a' *.sh
-cd pssh.d/
-ll -lart
-vi pssh_adhoc_command.sh
-cat /etc/yum.repos.d/epel.repo 
-sudo yum repolist
-cd scratch/
-cp /home/hpc/sysadmin/pkill* .
-cd scratch/
-cat pkill_non-system_users.sh 
-touch kill_non-system_processes.sh
-chmod +x *.sh
-emacs &
-emacs&
-cd scratch/
-cat pkill_non-system_users.sh 
-grep shopt ~/toolbox/bin/*.sh
-cat /proc/meminfo 
-cat pkill_non-system_users.sh 
-who
-ps -ef | grep /usr/bin/perl
-ps -ef | awk '{print $1}' | sort -u
-ps -ef | grep 28383
-ps -ef | grep -E '^ecompute'
-ps -ef | grep PBS
-ps -ef | grep UID
-man ps
-ps -e
-ps aux
-ps aux | grep ecompute
-ps au | grep ecompute
-ps -ef | grep ecompute
 declare -ax Pecompute=( `ps -ef | grep -E '^ecompute'` )
 echo ${Pecompute[@]}
 echo ${Pecompute[1]}
@@ -1040,6 +979,7 @@ ruby -v
 irb
 cd Dropbox/Ref/Programming/Ruby/
 root_gw
+<<<<<<< HEAD:history
 cd etc
 git status
 git add .
@@ -1080,3 +1020,24 @@ sudo su -
 ssh n1mwvis04
 ssh n1mwvis04.corp.cat.com
 sudo su -
+=======
+cd etc/bash/aliases/
+grep alias *
+grep root_gw *
+vi caterpillar.sh 
+cd ../..
+git status
+git add .
+git commit -m 'remove root_gw alias'
+git pull
+git push
+git pull
+ssh n1mwph1 sudo cat /etc/resolv.conf
+gw
+cd scratch/
+vi qstat-a-n-s.txt 
+root_gw
+gw
+vi qstat-a-n-s.txt
+gw
+>>>>>>> addb13d90bcc49cbfe2e9c9e1f8fe02f548a481d:history
