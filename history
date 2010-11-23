@@ -856,6 +856,32 @@ root_gw
 cd scratch/
 sqlite3 node_top.db
 <<<<<<< HEAD:history
+cd etc
+git status
+git pull
+git push
+cat history
+. .bashrc
+cd etc/
+./.symlink_it.sh 
+cd bash/local/
+rm -f *.sh
+ln -s defaults/* .
+cd ../..
+git status
+git pull
+git push
+cat history 
+cd etc/
+git status
+cd scr
+mkdir scratch
+cat .ssh/authorized_keys 
+ll -a
+cd .ssh
+vi config
+=======
+<<<<<<< HEAD:history
 cd toolbox/
 cd etc/
 git status
@@ -1020,7 +1046,6 @@ sudo su -
 ssh n1mwvis04
 ssh n1mwvis04.corp.cat.com
 sudo su -
-=======
 cd etc/bash/aliases/
 grep alias *
 grep root_gw *
@@ -1040,25 +1065,3 @@ root_gw
 gw
 vi qstat-a-n-s.txt
 gw
->>>>>>> addb13d90bcc49cbfe2e9c9e1f8fe02f548a481d:history
-cd etc
-git
-git status
-git reset
-git status
-git add .
-git commit -m 'save'
-git pull
-vi ssh/known_hosts 
-git commit -m 'save'
-git status
-git merge ssh/known_hosts
-git status
-git add .
-git commit -m 'save'
-git status
-git pull
-git push
-cd etc
-git pull
-cat ssh/config
