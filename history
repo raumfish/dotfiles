@@ -1040,3 +1040,43 @@ ruby -v
 irb
 cd Dropbox/Ref/Programming/Ruby/
 root_gw
+cd etc
+git status
+git add .
+git commit -m 'mod history'
+git pull
+vi history 
+git merge history
+git status
+git add bash/aliases/caterpillar.sh
+git pull
+git commit -m 'merged history'
+git status
+git help
+git merge history
+vi history
+git status
+git add .
+git commit -m 'merge history; mod caterpillar.sh'
+git status
+git pull
+git push
+gw
+sudo su -
+cd scratch/
+sudo su -
+sudo su -
+ps -ef | grep ssh | grep -v root
+ps -ef | grep ssh | grep -v root | grep -v skrivsm | awk '{print $1}'
+ps -ef | grep ssh | grep -v root | grep -v skrivsm | awk '{print $1}' | sort
+ps -ef | grep ssh | grep -v root | grep -v skrivsm | awk '{print $1}' | sort -u
+ps -ef | grep ssh | grep -v root | grep -v skrivsm | awk '{print $1}' | sort -u | tee /tmp/head_login_violations.list
+sudo su -
+ping n1mwvis02.corp.cat.com
+ping n1mwvis02.ecorp.cat.com
+sudo su -
+cat /etc/resolv.conf 
+sudo su -
+ssh n1mwvis04
+ssh n1mwvis04.corp.cat.com
+sudo su -
