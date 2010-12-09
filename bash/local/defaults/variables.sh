@@ -21,7 +21,7 @@ function prompt_command() {
 #export PS1="\[${COLOR_GRAY}\]\u@\h \[${COLOR_GREEN}\]\w > \[${COLOR_NC}\]"  # Primary prompt with user, host, and path 
 
 ## Alternative prompt with datetime\nusername, hostname, global history #, current command #
-PS1='\d@\t\n\u@\h:\!:\#:\w$ '
+PS1="\d@\t\n\u@\h:\!:\#:\w\\$ "
 
 ## Alternative PROMPT_COMMAND with user, hostname and path
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\007"' 
@@ -52,9 +52,11 @@ alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' 
 ## History
 export HISTFILE=${HOME}/history
 export HISTCONTROL=ignoredups # Ignores dupes in the history
-export HISTFILESIZE=2000
-export HISTSIZE=2000
-export HISTIGNORE="&:[ ]*:exit:cd:pwd:ls:ll:history:clear:reset:stty"
+export HISTFILESIZE=3000
+export HISTSIZE=3000
+#export HISTIGNORE="&:[ ]*:exit:cd:pwd:ls:ll:history:clear:reset:stty"
+export HISTIGNORE="&:[ ]*:exit:cd:pwd:ls:ll:history[ ]*:h[ ]*:clear:cls:reset:stty:git:ssh:rsh:ps:man:qdel:less:top:whoami:w:who:nslookup:finger:id:file:pbsnodes:tracejob:lastlog:env:more:qmgr:qstat:l:uptime"
+
 shopt -s histappend
 shopt -s histreedit
 shopt -s histverify

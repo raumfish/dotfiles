@@ -38,8 +38,8 @@ export BLOCKSIZE="K"
 export GZIP="-9"
 
 export HISTCONTROL=ignoreboth
-export HISTFILESIZE=1000
-export HISTSIZE=1000
+export HISTFILESIZE=3000
+export HISTSIZE=3000
 
 cond_source $HOME/.bash/local/variables.sh
 
@@ -74,3 +74,4 @@ cond_source $HOME/.bash/local/bindings.sh
 
 export HTTP_PROXY=http://proxy.cat.com:80/
 export http_proxy=${HTTP_PROXY}
+
