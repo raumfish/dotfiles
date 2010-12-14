@@ -130,8 +130,9 @@
  '(default ((t (:inherit nil :stipple nil :background "#ffffff" :foreground "#141312" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 103 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
 
 ;;; Load Path
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/"
-)
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/ruby")
 
 ;;; Load Tramp, which handles remote file editing
 (require 'tramp)
@@ -160,13 +161,11 @@
 ;;; (1) modify .emacs to use ruby-mode 
 ;;;     for example :
 ;;;
-    (autoload 'ruby-mode "ruby-mode"
-      "Mode for editing ruby source files" t)
-    (setq auto-mode-alist
-          (append '(("\\.rb$" . ruby-mode)) auto-mode-alist))
-    (setq interpreter-mode-alist (append '(("ruby" . ruby-mode))
-                                  interpreter-mode-alist))
-    
+(autoload 'ruby-mode "ruby-mode"
+     "Mode for editing ruby source files")
+(add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
+(add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
+
 ;;; (2) set to load inf-ruby and set inf-ruby key definition in ruby-mode.
 ;;;
     (autoload 'run-ruby "inf-ruby"
@@ -186,6 +185,11 @@
              (set (make-local-variable 'tab-width) 2)
              (define-key ruby-mode-map "C-m" 'newline-and-indent) ;Not sure if this line is 100% right but it works!
              ))
+
+;; If you have Emacs 19.2x or older, use rubydb2x                              
+(autoload 'rubydb "rubydb3x" "Ruby debugger" t)
+;; uncomment the next line if you want syntax highlighting                     
+(add-hook 'ruby-mode-hook 'turn-on-font-lock)
 
 ;;; irbsh
 
