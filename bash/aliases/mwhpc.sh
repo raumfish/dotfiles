@@ -3,42 +3,46 @@ export FS1=n1lflexp02.corp.cat.com
 export FS2=aclflexp01.acric.cat.com
 export FS3=mtlflexp03.corp.cat.com
 
-# ABAQUS
+# PBSPro (Vendor: Altair)
+[ -f /etc/profile.d/pbs.sh ] && source /etc/profile.d/pbs.sh
+
+# ABAQUS (Vendor: ABAQUS)
 FV_ABAQUS=abaquslm
 FP_ABAQUS=37000
 FL_ABAQUS=$FP_ABAQUS@$FS1:$FP_ABAQUS@$FS2:$FP_ABAQUS@$FS3
 PATH_ABAQUS=
 
-# FLUENT
+# FLUENT (Vendor: ANSYS)
 FV_FLUENT=fluentlm
 FP_FLUENT=7241
 FL_FLUENT=$FP_FLUENT@$FS1:$FP_FLUENT@$FS2:$FP_FLUENT$FS3
-PATH_FLUENT=
+PATH_FLUENT=/apps/ansys_inc/v130/fluent/bin
 
-# StarCCM+, StarCD
+# StarCCM+, StarCD (Vendor: ADAPCO)
 FV_STARCD=cdlmd
 FP_STARCD=25199
 FL_STARCD=$FP_STARCD@$FS1:$FP_STARCD@$FS2:$FP_STARCD$FS3
-PATH_STARCD=
+PATH_STARCD=/apps/StarCD/starcd-3240/bin:/apps/StarCD/star-ccm/starccm+5.06.007/star/bin
 
-# ANSYS
+# ANSYS (Vendor: ANSYS)
 FV_ANSYS=ansyslmd
 FP_ANSYS=25009
 FL_ANSYS=$FP_ANSYS@$FS1:$FP_ANSYS@$FS2:$FP_ANSYS$FS3
-PATH_ANSYS=
+PATH_ANSYS=/apps/ansys/v121/ansys/bin                                                                           
 
-# NASTRAN
-#FP_NASTRAN=
-#FL_NASTRAN=$FP_NASTRAN@$FS1:$FP_NASTRAN@$FS2:$FP_NASTRAN$FS3
-#PATH_NASTRAN=
+# NASTRAN (Vendor: NX?)
+FV_NASTRAN=UNKNOWN
+FP_NASTRAN=999999
+FL_NASTRAN=$FP_NASTRAN@$FS1:$FP_NASTRAN@$FS2:$FP_NASTRAN$FS3
+PATH_NASTRAN=/apps/Nastran/v7.0/bin
 
-# RadTherm
+# RadTherm (Vendor: ThermoAnalytics, Inc.)
 FV_RADTHERM=taitherm
 FP_RADTHERM=27012
 FL_RADTHERM=$FP_RADTHERM@$FS1:$FP_RADTHERM@$FS2:$FP_RADTHERM$FS3
-PATH_RADTHERM=
+PATH_RADTHERM=/apps/radtherm/9.3.0/bin
 
-# ANSOFT
+# ANSOFT (Vendor: ANSYS)
 FV_ANSOFT=ansoftd
 FP_ANSOFT=25200
 FL_ANSOFT=$FP_ANSOFT@$FS1:$FP_ANSOFT@$FS2:$FP_ANSOFT$FS3
@@ -50,8 +54,8 @@ FP_ISIGHT=27013
 FL_ISIGHT=$FP_ISIGHT@$FS1:$FP_ISIGHT@$FS2:$FP_ISIGHT$FS3
 PATH_ISIGHT=
 
-# Caterpillar
-## PES
+# Caterpillar (Vendor: Caterpillar, Inc.)
+## PES (Product Engineering Solutions)
 FV_CAT_PES=catlmd
 FP_CAT_PES=25060
 FL_CAT_PES=$FP_CAT_PES@$FS1:$FP_CAT_PES@$FS2:$FP_CAT_PES$FS3
@@ -63,6 +67,7 @@ $FL_ABAQUS:\
 $FL_FLUENT:\
 $FL_STARCD:\
 $FL_ANSYS:\
+$FL_NASTRAN:\
 $FL_RADTHERM:\
 $FL_ANSOFT:\
 $FL_ISIGHT:\
