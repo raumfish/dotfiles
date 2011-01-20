@@ -27,23 +27,23 @@ wirble_opts = {
   end
 end
 
-%w{init colorize}.each { |str| Wirble.send(str) }
+#%w{init colorize}.each { |str| Wirble.send(str) }
 #Wirble.init(wirble_opts)
 
-%w{pp-colour}.each do |lib|
-  begin
-    require lib
-  rescue LoadError => err
-    $stderr.puts "Couldn't load #{lib}: #{err}"
-  end
-end
+#%w{pp-colour}.each do |lib|
+#  begin
+#    require lib
+#  rescue LoadError => err
+#    $stderr.puts "Couldn't load #{lib}: #{err}"
+#  end
+#end
 
 if ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
   require 'logger'
   RAILS_DEFAULT_LOGGER = Logger.new(STDOUT)
 end
 
-load "irbsh-lib.rb" if IRB.conf[:PROMPT_MODE] == :INF_RUBY
+#load "irbsh-lib.rb" if IRB.conf[:PROMPT_MODE] == :INF_RUBY
 
 #IRB.conf[:IRB_RC] = proc do |conf|
 #  leader = " " * conf.irb_name.length

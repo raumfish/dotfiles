@@ -28,7 +28,7 @@ set nomodeline
 set scrolloff=1
 
 " Indentation options
-set autoindent
+set noautoindent
 set expandtab
 set softtabstop=2
 set shiftwidth=2
