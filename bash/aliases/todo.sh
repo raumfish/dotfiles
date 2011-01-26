@@ -1,2 +1,2 @@
-alias t="todo.sh $HOME/.todo.cfg"
+alias t="todo.sh -d $HOME/.todo.cfg"
 
