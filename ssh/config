@@ -25,4 +25,6 @@ Host *
   HostbasedAuthentication   no
   PubkeyAuthentication      yes
   PasswordAuthentication    yes
+  ControlPath               ~/.ssh/master-%r@%h:%p
+  ControlMaster             auto
 
