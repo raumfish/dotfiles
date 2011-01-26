@@ -3,14 +3,17 @@ export FS1=n1lflexp02.corp.cat.com
 export FS2=aclflexp01.acric.cat.com
 export FS3=mtlflexp03.corp.cat.com
 
-# PBSPro (Vendor: Altair)
+# PBS Professional (aka PBSPro) (Vendor: Altair)
 [ -f /etc/profile.d/pbs.sh ] && source /etc/profile.d/pbs.sh
 
 # ABAQUS (Vendor: ABAQUS)
 FV_ABAQUS=abaquslm
-FP_ABAQUS=37000
+## versions 6.9 and 6.10
+FP_ABAQUS=27000         
+## version 6.8
+#FP_ABAQUS=37000  # @n1pes01.cis.cat.com
 FL_ABAQUS=$FP_ABAQUS@$FS1:$FP_ABAQUS@$FS2:$FP_ABAQUS@$FS3
-PATH_ABAQUS=
+PATH_ABAQUS=/apps/Abaqus/6.10-1/exec/
 
 # FLUENT (Vendor: ANSYS)
 FV_FLUENT=fluentlm
@@ -52,7 +55,13 @@ PATH_ANSOFT=
 FV_ISIGHT=engswd
 FP_ISIGHT=27013
 FL_ISIGHT=$FP_ISIGHT@$FS1:$FP_ISIGHT@$FS2:$FP_ISIGHT$FS3
-PATH_ISIGHT=
+PATH_ISIGHT=/apps/iSIGHT_10.0/bin
+
+# FE-Safe
+PATH_FESAFE=/apps/fesafe/version.5.4-06
+
+# Tomahawk
+PATH_TOMAHAWK=/apps/Tomahawk/tomahawk_linuxhpc_4.7/bin
 
 # Caterpillar (Vendor: Caterpillar, Inc.)
 ## PES (Product Engineering Solutions)
@@ -85,6 +94,8 @@ $PATH_ANSYS:\
 $PATH_RADTHERM:\
 $PATH_ANSOFT:\
 $PATH_ISIGHT:\
+$PATH_FESAFE:\
+$PATH_TOMAHAWK:\
 $PATH_CAT_PES:\
 $HOME/bin
 
