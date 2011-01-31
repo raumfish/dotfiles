@@ -40,11 +40,11 @@ relink ~/.parallelrc   ~/etc/parallelrc
 relink ~/.emacs.d ~/etc/emacs.d
 
 UNAME=`uname`
-`
+
 if [[ $UNAME =~ 'Linux' ]]; then
   relink ~/.todo.cfg ~/Dropbox/todo/.conf/linux.todo.cfg
   relink ~/.todo.actions.d ~/Dropbox/todo/.todo.actions.d
-elif [[ $UNAME =~ 'CYGWIN']]
+elif [[ $UNAME =~ 'CYGWIN' ]]
   relink ~/.todo.cfg /cygdrive/c/Anchor/Dropbox/todo/.conf/windows.todo.cfg
   relink ~/.todo.actions.d /cygdrive/c/Anchor/Dropbox/todo/.todo.actions.d
 fi
