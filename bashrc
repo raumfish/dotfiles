@@ -75,3 +75,5 @@ cond_source $HOME/.bash/local/bindings.sh
 export HTTP_PROXY=http://proxy.cat.com:80/
 export http_proxy=${HTTP_PROXY}
 
+alias ll='ls -l'
+alias ssh='ssh -x -Y -X'

@@ -1,0 +1,34 @@
+	alias_ll="alias ll='ls -l'"
+	alias_ssh="alias ssh='ssh -x -Y -X'"
+	fbashrc="${HOME}/.bashrc"
+
+	if [[ ! -f $fbashrc ]]; then
+	  touch $fbashrc
+	fi
+
+	grep "$alias_ll" $fbashrc >/dev/null 2>&1
+	RC=`echo $?`
+	if [[ $RC != '0' ]]; then
+	  echo $alias_ll >> $fbashrc
+	fi
+
+	grep "$alias_ssh" $fbashrc >/dev/null 2>&1
+	RC=`echo $?`
+	if [[ $RC != '0' ]]; then
+	  echo $alias_ssh >> $fbashrc
+	fi
+
+	#. .bashrc
+
+	`ps -ef | grep XWin >/dev/null 2>&1`
+	RC=`echo $?`
+	if [[ $RC != '0' ]]; then
+	  Xwin.exe -multiwindow &
+	  sleep 5
+	fi
+
+	export DISPLAY=localhost:0.0
+	xhost + >/dev/null
+
+	echo "## Closing this (Cygwin) Window will terminate the xterm window ##"
+xterm -sb -sl 3000 &
