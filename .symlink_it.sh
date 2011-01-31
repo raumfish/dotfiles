@@ -38,6 +38,14 @@ relink ~/.parallelrc   ~/etc/parallelrc
 #relink ~/history   ~/etc/history
 #relink ~/.sqlite_history   ~/etc/sqlite_history
 relink ~/.emacs.d ~/etc/emacs.d
-relink ~/.todo.cfg ~/etc/todo.cfg
-relink ~/.todo.actions.d ~/Dropbox/todo/.todo.actions.d
+
+UNAME=`uname`
+`
+if [[ $UNAME =~ 'Linux' ]]; then
+  relink ~/.todo.cfg ~/Dropbox/todo/.conf/linux.todo.cfg
+  relink ~/.todo.actions.d ~/Dropbox/todo/.todo.actions.d
+elif [[ $UNAME =~ 'CYGWIN']]
+  relink ~/.todo.cfg /cygdrive/c/Anchor/Dropbox/todo/.conf/windows.todo.cfg
+  relink ~/.todo.actions.d /cygdrive/c/Anchor/Dropbox/todo/.todo.actions.d
+fi
 
