@@ -44,8 +44,8 @@ UNAME=`uname`
 if [[ $UNAME =~ 'Linux' ]]; then
   relink ~/.todo.cfg ~/Dropbox/todo/.conf/linux.todo.cfg
   relink ~/.todo.actions.d ~/Dropbox/todo/.todo.actions.d
-elif [[ $UNAME =~ 'CYGWIN' ]]
-  relink ~/.todo.cfg /cygdrive/c/Anchor/Dropbox/todo/.conf/windows.todo.cfg
+elif [[ $UNAME =~ 'CYGWIN' ]]; then
+  relink ~/.todo.cfg /cygdrive/c/Anchor/Dropbox/todo/.conf/cygwin.todo.cfg
   relink ~/.todo.actions.d /cygdrive/c/Anchor/Dropbox/todo/.todo.actions.d
 fi
 
