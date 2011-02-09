@@ -9,7 +9,7 @@ Host n1mw*
   PubkeyAuthentication      yes
   PasswordAuthentication    yes
 
-Host github*
+Host github.com
   IdentityFile              ~/.ssh/git_id_rsa
   IdentitiesOnly            yes
   User                      git
