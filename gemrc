@@ -6,6 +6,5 @@ http_proxy: http://proxy.fpd.cat.com:80
 :sources: 
 - http://rubygems.org/
 - http://gems.github.com/
-- http://gems.rubyonrails.org/
 :verbose: true
 :benchmark: false
