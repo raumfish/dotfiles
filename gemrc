@@ -4,7 +4,7 @@ http_proxy: http://proxy.fpd.cat.com:80
 :backtrace: false
 :bulk_threshold: 1000
 :sources: 
-- http://gems.rubyforge.org/
-- http://gems.github.com
+- http://rubygems.org/
+- http://gems.github.com/
 :verbose: true
 :benchmark: false
