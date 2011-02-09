@@ -38,6 +38,7 @@ relink ~/.parallelrc   ~/etc/parallelrc
 #relink ~/history   ~/etc/history
 #relink ~/.sqlite_history   ~/etc/sqlite_history
 relink ~/.emacs.d ~/etc/emacs.d
+relink ~/.hoerc       ~/etc/hoerc
 
 UNAME=`uname`
 
