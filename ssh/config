@@ -1,16 +1,15 @@
 
-Host n1mwph1.corp.cat.com
+Host n1mw*
   IdentityFile              ~/.ssh/hpc_id_dsa
   IdentitiesOnly            yes
   User                      skrivsm
   Port                      22
-#  Hostname                  n1mwph1.corp.cat.com
   PreferredAuthentications  publickey
   Compression               yes
   PubkeyAuthentication      yes
-  PasswordAuthentication    no
+  PasswordAuthentication    yes
 
-Host github.com
+Host github*
   IdentityFile              ~/.ssh/git_id_rsa
   IdentitiesOnly            yes
   User                      git
