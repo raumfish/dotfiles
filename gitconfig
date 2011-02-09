@@ -21,3 +21,5 @@
 	excludesfile = /home/skrivsm/.gitignore
 [branch]
   autosetuprebase = always
+[http]
+	proxy = http://proxy.cat.com:80
