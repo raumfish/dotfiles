@@ -27,10 +27,11 @@ PS1="\[\e[37;42m\]\h@\t\[\e[0m\] "
 
 #-------------------------------------------------
 
-export PATH=".local:$HOME/etc/bin:$HOME/toolbox/bin:/usr/local/bin:/usr/local/sbin:/opt/local/sbin:/opt/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/opt/eclipse:/usr/pbs/bin:/opt/xcat/bin"
+export PATH="$HOME/etc/bin:$HOME/toolbox/bin:/usr/local/bin:/usr/local/sbin:/opt/local/sbin:/opt/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/opt/eclipse:/usr/pbs/bin:/opt/xcat/bin"
 export MANPATH="/opt/local/share/man:$MANPATH"
 
-export EDITOR=emacs-screen.sh
+export EDITOR=emacs
+#export EDITOR=emacs-screen.sh
 export ALTERNATE_EDITOR=emacs-nox
 export PAGER="less"
 export BLOCKSIZE="K"
