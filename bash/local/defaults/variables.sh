@@ -8,6 +8,7 @@ function prompt_command() {
 
 ## Original PS1 definition
 #PS1="\[\e[31;43m\]\u@\h\[\e[0m\] "
+PS1="\$ "
 
 ## Original PROMPT_COMMAND definition
 #PROMPT_COMMAND=prompt_command
@@ -21,10 +22,10 @@ function prompt_command() {
 #export PS1="\[${COLOR_GRAY}\]\u@\h \[${COLOR_GREEN}\]\w > \[${COLOR_NC}\]"  # Primary prompt with user, host, and path 
 
 ## Alternative prompt with datetime\nusername, hostname, global history #, current command #
-PS1="\d@\t\n\u@\h:\!:\#:\w\\$ "
+#PS1="\d@\t\n\u@\h:\!:\#:\w\\$ "
 
 ## Alternative PROMPT_COMMAND with user, hostname and path
-export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\007"' 
+#export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\007"' 
 
 ## Save bookmarks to folders. Set the current folder you are in as 'save foo', then can cd with 'cd foo' from anywhere
 if [ ! -f ~/.dirs ]; then  # if doesn't exist, create it
