@@ -30,7 +30,7 @@ relink ~/.ssh/proxy_cmd_for_github ~/etc/ssh/proxy_cmd_for_github
 relink ~/.rtorrent.rc  ~/etc/rtorrent.rc
 relink ~/.wgetrc       ~/etc/wgetrc
 relink ~/.gemrc        ~/etc/gemrc
-relink ~/.emacs        ~/etc/emacs
+#relink ~/.emacs        ~/etc/emacs
 relink ~/.zile         ~/etc/zile
 relink ~/.curlrc       ~/etc/curlrc
 relink ~/.pssh         ~/etc/pssh
