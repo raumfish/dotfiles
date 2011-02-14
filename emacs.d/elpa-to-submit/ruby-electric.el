@@ -92,6 +92,7 @@ inserted. The word 'all' will do all insertions."
 closing bracket or not."
   :type 'boolean :group 'ruby-electric)
 
+;;;###autoload
 (define-minor-mode ruby-electric-mode
   "Toggle Ruby Electric minor mode.
 With no argument, this command toggles the mode.  Non-null prefix
@@ -128,7 +129,8 @@ strings. Note that you must have Font Lock enabled."
       (save-excursion
         (ruby-indent-line t)
         (newline)
-        (ruby-insert-end))))
+        (insert "end")
+        (ruby-indent-line t))))
 
 (defun ruby-electric-code-at-point-p()
   (and ruby-electric-mode

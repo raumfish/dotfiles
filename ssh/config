@@ -8,6 +8,26 @@ Host n1mw*
   PubkeyAuthentication      yes
   PasswordAuthentication    yes
 
+Host pn*
+  IdentityFile              ~/.ssh/hpc_id_dsa
+  IdentitiesOnly            yes
+  User                      skrivsm
+  Port                      22
+  PreferredAuthentications  publickey
+  Compression               yes
+  PubkeyAuthentication      yes
+  PasswordAuthentication    yes
+      
+Host vis*
+  IdentityFile              ~/.ssh/hpc_id_dsa
+  IdentitiesOnly            yes
+  User                      skrivsm
+  Port                      22
+  PreferredAuthentications  publickey
+  Compression               yes
+  PubkeyAuthentication      yes
+  PasswordAuthentication    yes
+      
 Host animalmednetwork.com
   IdentityFile              ~/.ssh/tunnel_id_dsa
   IdentitiesOnly            yes
