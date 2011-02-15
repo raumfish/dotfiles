@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (echo-pick echo-pick-mode) "echo-pick" "echo-pick.el"
-;;;;;;  (19802 43249))
-;;; Generated autoloads from echo-pick.el
+;;;### (autoloads (echo-pick echo-pick-mode) "echo-pick" "../../../../.emacs.d/elpa/echo-pick-0.1/echo-pick.el"
+;;;;;;  (19802 55132))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/echo-pick-0.1/echo-pick.el
 
 (autoload 'echo-pick-mode "echo-pick" "\
 Minor mode that displays `echo-pick' after `echo-pick-idle-delay'.
@@ -19,7 +19,9 @@ Show the best echo message for the current `point'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("echo-pick-pkg.el") (19802 43249 929555))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/echo-pick-0.1/echo-pick-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/echo-pick-0.1/echo-pick.el") (19802
+;;;;;;  55132 663986))
 
 ;;;***
 

@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (mv-shell-mode mv-shell-mode) "mv-shell" "mv-shell.el"
-;;;;;;  (19802 51123))
-;;; Generated autoloads from mv-shell.el
+;;;### (autoloads (mv-shell-mode mv-shell-mode) "mv-shell" "../../../../.emacs.d/elpa/mv-shell-1.0/mv-shell.el"
+;;;;;;  (19802 55117))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/mv-shell-1.0/mv-shell.el
 
 (autoload 'mv-shell-mode "mv-shell" "\
 With a positive argument, turns on mv-shell-mode.  With a
@@ -31,7 +31,9 @@ commands.
 
 ;;;***
 
-;;;### (autoloads nil nil ("mv-shell-pkg.el") (19802 51123 334129))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/mv-shell-1.0/mv-shell-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/mv-shell-1.0/mv-shell.el") (19802
+;;;;;;  55117 107889))
 
 ;;;***
 

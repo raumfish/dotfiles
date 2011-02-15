@@ -4,8 +4,9 @@
 
 
 ;;;### (autoloads (ffip-project-root find-file-in-project) "find-file-in-project"
-;;;;;;  "find-file-in-project.el" (19802 42449))
-;;; Generated autoloads from find-file-in-project.el
+;;;;;;  "../../../../.emacs.d/elpa/find-file-in-project-2.0/find-file-in-project.el"
+;;;;;;  (19802 54437))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/find-file-in-project-2.0/find-file-in-project.el
 
 (autoload 'find-file-in-project "find-file-in-project" "\
 Prompt with a completing list of all files in the project to find one.
@@ -23,8 +24,9 @@ Find the root of the project defined by presence of `.emacs-project'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("find-file-in-project-pkg.el") (19802
-;;;;;;  42449 513414))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/find-file-in-project-2.0/find-file-in-project-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/find-file-in-project-2.0/find-file-in-project.el")
+;;;;;;  (19802 54437 900572))
 
 ;;;***
 

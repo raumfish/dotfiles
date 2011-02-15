@@ -4,8 +4,9 @@
 
 
 ;;;### (autoloads (plv-find-project-file) "project-local-variables"
-;;;;;;  "project-local-variables.el" (19802 42449))
-;;; Generated autoloads from project-local-variables.el
+;;;;;;  "../../../../.emacs.d/elpa/project-local-variables-0.2/project-local-variables.el"
+;;;;;;  (19802 54437))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/project-local-variables-0.2/project-local-variables.el
 
 (autoload 'plv-find-project-file "project-local-variables" "\
 Look up the project file in and above `dir'.
@@ -16,8 +17,9 @@ Look up the project file in and above `dir'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("project-local-variables-pkg.el") (19802
-;;;;;;  42449 99150))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/project-local-variables-0.2/project-local-variables-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/project-local-variables-0.2/project-local-variables.el")
+;;;;;;  (19802 54437 494961))
 
 ;;;***
 

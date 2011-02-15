@@ -4,8 +4,9 @@
 
 
 ;;;### (autoloads (pastie-browse pastie-get pastie-buffer pastie-region)
-;;;;;;  "pastie" "pastie.el" (19802 51200))
-;;; Generated autoloads from pastie.el
+;;;;;;  "pastie" "../../../../.emacs.d/elpa/pastie-20091230/pastie.el"
+;;;;;;  (19802 55115))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/pastie-20091230/pastie.el
 
 (autoload 'pastie-region "pastie" "\
 Post the current region as a new paste at pastie.org.
@@ -37,7 +38,9 @@ Not documented
 
 ;;;***
 
-;;;### (autoloads nil nil ("pastie-pkg.el") (19802 51200 584553))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/pastie-20091230/pastie-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/pastie-20091230/pastie.el") (19802
+;;;;;;  55115 739723))
 
 ;;;***
 

@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (log4j-mode) "log4j-mode" "log4j-mode.el" (19802
-;;;;;;  51341))
-;;; Generated autoloads from log4j-mode.el
+;;;### (autoloads (log4j-mode) "log4j-mode" "../../../../.emacs.d/elpa/log4j-mode-1.3/log4j-mode.el"
+;;;;;;  (19802 55119))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/log4j-mode-1.3/log4j-mode.el
  (add-to-list 'auto-mode-alist '("\\.log\\'" . log4j-mode))
 
 (autoload 'log4j-mode "log4j-mode" "\
@@ -38,7 +38,9 @@ across log records.
 
 ;;;***
 
-;;;### (autoloads nil nil ("log4j-mode-pkg.el") (19802 51342 45081))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/log4j-mode-1.3/log4j-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/log4j-mode-1.3/log4j-mode.el")
+;;;;;;  (19802 55119 564426))
 
 ;;;***
 

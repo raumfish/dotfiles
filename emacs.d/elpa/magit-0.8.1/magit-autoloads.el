@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (magit-status) "magit" "magit.el" (19802 42450))
-;;; Generated autoloads from magit.el
+;;;### (autoloads (magit-status) "magit" "../../../../.emacs.d/elpa/magit-0.8.1/magit.el"
+;;;;;;  (19802 54438))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/magit-0.8.1/magit.el
 
 (autoload 'magit-status "magit" "\
 Not documented
@@ -13,7 +14,9 @@ Not documented
 
 ;;;***
 
-;;;### (autoloads nil nil ("magit-pkg.el") (19802 42450 941633))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/magit-0.8.1/magit-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/magit-0.8.1/magit.el") (19802
+;;;;;;  54438 420746))
 
 ;;;***
 

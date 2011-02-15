@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (css-mode) "css-mode" "css-mode.el" (19802 50860))
-;;; Generated autoloads from css-mode.el
+;;;### (autoloads (css-mode) "css-mode" "../../../../.emacs.d/elpa/css-mode-1.0/css-mode.el"
+;;;;;;  (19802 55135))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/css-mode-1.0/css-mode.el
 (add-to-list 'auto-mode-alist '("\\.css\\'" . css-mode))
 
 (autoload 'css-mode "css-mode" "\
@@ -18,7 +19,9 @@ Key bindings:
 
 ;;;***
 
-;;;### (autoloads nil nil ("css-mode-pkg.el") (19802 50860 971487))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/css-mode-1.0/css-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/css-mode-1.0/css-mode.el") (19802
+;;;;;;  55135 717867))
 
 ;;;***
 

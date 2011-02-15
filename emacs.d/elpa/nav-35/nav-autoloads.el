@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (nav) "nav" "nav.el" (19802 51308))
-;;; Generated autoloads from nav.el
+;;;### (autoloads (nav) "nav" "../../../../.emacs.d/elpa/nav-35/nav.el"
+;;;;;;  (19802 55116))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/nav-35/nav.el
 
 (autoload 'nav "nav" "\
 Run nav-mode in a narrow window on the left side.
@@ -13,7 +14,8 @@ Run nav-mode in a narrow window on the left side.
 
 ;;;***
 
-;;;### (autoloads nil nil ("nav-pkg.el") (19802 51308 520240))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/nav-35/nav-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/nav-35/nav.el") (19802 55116 453607))
 
 ;;;***
 

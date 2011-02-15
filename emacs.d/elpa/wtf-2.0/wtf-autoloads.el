@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (wtf-is wtf-remove wtf-add) "wtf" "wtf.el" (19802
-;;;;;;  51758))
-;;; Generated autoloads from wtf.el
+;;;### (autoloads (wtf-is wtf-remove wtf-add) "wtf" "../../../../.emacs.d/elpa/wtf-2.0/wtf.el"
+;;;;;;  (19802 55113))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/wtf-2.0/wtf.el
 
 (autoload 'wtf-add "wtf" "\
 Add ACRONYM and its DEFINITION to the list of custom associations.
@@ -36,7 +36,9 @@ DEF refers to the definition associated with ACRONYM in `wtf-alist'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("wtf-pkg.el") (19802 51758 344913))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/wtf-2.0/wtf-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/wtf-2.0/wtf.el") (19802 55113
+;;;;;;  701444))
 
 ;;;***
 

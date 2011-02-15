@@ -4,8 +4,9 @@
 
 
 ;;;### (autoloads (global-smart-tab-mode smart-tab-mode smart-tab-mode-on
-;;;;;;  smart-tab) "smart-tab" "smart-tab.el" (19802 51427))
-;;; Generated autoloads from smart-tab.el
+;;;;;;  smart-tab) "smart-tab" "../../../../.emacs.d/elpa/smart-tab-0.3/smart-tab.el"
+;;;;;;  (19802 55114))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/smart-tab-0.3/smart-tab.el
 
 (autoload 'smart-tab "smart-tab" "\
 Try to 'do the smart thing' when tab is pressed.
@@ -55,7 +56,9 @@ See `smart-tab-mode' for more information on Smart-Tab mode.
 
 ;;;***
 
-;;;### (autoloads nil nil ("smart-tab-pkg.el") (19802 51427 591682))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/smart-tab-0.3/smart-tab-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/smart-tab-0.3/smart-tab.el") (19802
+;;;;;;  55114 472285))
 
 ;;;***
 

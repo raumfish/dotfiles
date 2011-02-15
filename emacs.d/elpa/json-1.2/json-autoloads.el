@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("json-pkg.el" "json.el") (19802 43290
-;;;;;;  277410))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/json-1.2/json-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/json-1.2/json.el") (19802 55121
+;;;;;;  74009))
 
 ;;;***
 

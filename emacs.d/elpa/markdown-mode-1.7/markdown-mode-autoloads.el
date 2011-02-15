@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (markdown-mode) "markdown-mode" "markdown-mode.el"
-;;;;;;  (19802 51020))
-;;; Generated autoloads from markdown-mode.el
+;;;### (autoloads (markdown-mode) "markdown-mode" "../../../../.emacs.d/elpa/markdown-mode-1.7/markdown-mode.el"
+;;;;;;  (19802 55117))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/markdown-mode-1.7/markdown-mode.el
 
 (autoload 'markdown-mode "markdown-mode" "\
 Major mode for editing Markdown files.
@@ -18,7 +18,9 @@ Major mode for editing Markdown files.
 
 ;;;***
 
-;;;### (autoloads nil nil ("markdown-mode-pkg.el") (19802 51020 369478))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/markdown-mode-1.7/markdown-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/markdown-mode-1.7/markdown-mode.el")
+;;;;;;  (19802 55117 738497))
 
 ;;;***
 

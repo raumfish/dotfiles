@@ -4,8 +4,8 @@
 
 
 ;;;### (autoloads (erc-handle-irc-url erc erc-select-read-args) "erc"
-;;;;;;  "erc.el" (19802 43090))
-;;; Generated autoloads from erc.el
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc.el" (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc.el
 
 (autoload 'erc-select-read-args "erc" "\
 Prompt the user for values of nick, server, port, and password.
@@ -46,33 +46,37 @@ Otherwise, connect to HOST:PORT as USER and /join CHANNEL.
 
 ;;;***
 
-;;;### (autoloads nil "erc-autoaway" "erc-autoaway.el" (19802 43090))
-;;; Generated autoloads from erc-autoaway.el
+;;;### (autoloads nil "erc-autoaway" "../../../../.emacs.d/elpa/erc-5.3/erc-autoaway.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-autoaway.el
  (autoload 'erc-autoaway-mode "erc-autoaway")
 
 ;;;***
 
-;;;### (autoloads nil "erc-bbdb" "erc-bbdb.el" (19802 43089))
-;;; Generated autoloads from erc-bbdb.el
+;;;### (autoloads nil "erc-bbdb" "../../../../.emacs.d/elpa/erc-5.3/erc-bbdb.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-bbdb.el
  (autoload 'erc-bbdb-mode "erc-bbdb")
 
 ;;;***
 
-;;;### (autoloads nil "erc-button" "erc-button.el" (19802 43089))
-;;; Generated autoloads from erc-button.el
+;;;### (autoloads nil "erc-button" "../../../../.emacs.d/elpa/erc-5.3/erc-button.el"
+;;;;;;  (19802 55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-button.el
  (autoload 'erc-button-mode "erc-button" nil t)
 
 ;;;***
 
-;;;### (autoloads nil "erc-capab" "erc-capab.el" (19802 43089))
-;;; Generated autoloads from erc-capab.el
+;;;### (autoloads nil "erc-capab" "../../../../.emacs.d/elpa/erc-5.3/erc-capab.el"
+;;;;;;  (19802 55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-capab.el
  (autoload 'erc-capab-identify-mode "erc-capab" nil t)
 
 ;;;***
 
 ;;;### (autoloads (erc-chess-ctcp-query-handler erc-cmd-CHESS) "erc-chess"
-;;;;;;  "erc-chess.el" (19802 43090))
-;;; Generated autoloads from erc-chess.el
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-chess.el" (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-chess.el
 
 (defvar erc-ctcp-query-CHESS-hook '(erc-chess-ctcp-query-handler))
 
@@ -89,15 +93,17 @@ Not documented
 
 ;;;***
 
-;;;### (autoloads nil "erc-compat" "erc-compat.el" (19802 43089))
-;;; Generated autoloads from erc-compat.el
+;;;### (autoloads nil "erc-compat" "../../../../.emacs.d/elpa/erc-5.3/erc-compat.el"
+;;;;;;  (19802 55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-compat.el
  (autoload 'erc-define-minor-mode "erc-compat")
 
 ;;;***
 
 ;;;### (autoloads (erc-ctcp-query-DCC pcomplete/erc-mode/DCC erc-cmd-DCC)
-;;;;;;  "erc-dcc" "erc-dcc.el" (19802 43090))
-;;; Generated autoloads from erc-dcc.el
+;;;;;;  "erc-dcc" "../../../../.emacs.d/elpa/erc-5.3/erc-dcc.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-dcc.el
  (autoload 'erc-dcc-mode "erc-dcc")
 
 (autoload 'erc-cmd-DCC "erc-dcc" "\
@@ -128,9 +134,9 @@ that subcommand.
 ;;;### (autoloads (erc-ezb-initialize erc-ezb-select-session erc-ezb-select
 ;;;;;;  erc-ezb-add-session erc-ezb-end-of-session-list erc-ezb-init-session-list
 ;;;;;;  erc-ezb-identify erc-ezb-notice-autodetect erc-ezb-lookup-action
-;;;;;;  erc-ezb-get-login erc-cmd-ezb) "erc-ezbounce" "erc-ezbounce.el"
-;;;;;;  (19802 43089))
-;;; Generated autoloads from erc-ezbounce.el
+;;;;;;  erc-ezb-get-login erc-cmd-ezb) "erc-ezbounce" "../../../../.emacs.d/elpa/erc-5.3/erc-ezbounce.el"
+;;;;;;  (19802 55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-ezbounce.el
 
 (autoload 'erc-cmd-ezb "erc-ezbounce" "\
 Send EZB commands to the EZBouncer verbatim.
@@ -191,8 +197,9 @@ Add EZBouncer convenience functions to ERC.
 
 ;;;***
 
-;;;### (autoloads (erc-fill) "erc-fill" "erc-fill.el" (19802 43090))
-;;; Generated autoloads from erc-fill.el
+;;;### (autoloads (erc-fill) "erc-fill" "../../../../.emacs.d/elpa/erc-5.3/erc-fill.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-fill.el
  (autoload 'erc-fill-mode "erc-fill" nil t)
 
 (autoload 'erc-fill "erc-fill" "\
@@ -203,16 +210,17 @@ You can put this on `erc-insert-modify-hook' and/or `erc-send-modify-hook'.
 
 ;;;***
 
-;;;### (autoloads nil "erc-hecomplete" "erc-hecomplete.el" (19802
-;;;;;;  43090))
-;;; Generated autoloads from erc-hecomplete.el
+;;;### (autoloads nil "erc-hecomplete" "../../../../.emacs.d/elpa/erc-5.3/erc-hecomplete.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-hecomplete.el
  (autoload 'erc-hecomplete-mode "erc-hecomplete" nil t)
 
 ;;;***
 
 ;;;### (autoloads (erc-identd-stop erc-identd-start) "erc-identd"
-;;;;;;  "erc-identd.el" (19802 43088))
-;;; Generated autoloads from erc-identd.el
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-identd.el" (19802
+;;;;;;  55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-identd.el
  (autoload 'erc-identd-mode "erc-identd")
 
 (autoload 'erc-identd-start "erc-identd" "\
@@ -232,9 +240,9 @@ Not documented
 
 ;;;***
 
-;;;### (autoloads (erc-create-imenu-index) "erc-imenu" "erc-imenu.el"
-;;;;;;  (19802 43088))
-;;; Generated autoloads from erc-imenu.el
+;;;### (autoloads (erc-create-imenu-index) "erc-imenu" "../../../../.emacs.d/elpa/erc-5.3/erc-imenu.el"
+;;;;;;  (19802 55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-imenu.el
 
 (autoload 'erc-create-imenu-index "erc-imenu" "\
 Not documented
@@ -243,21 +251,24 @@ Not documented
 
 ;;;***
 
-;;;### (autoloads nil "erc-join" "erc-join.el" (19802 43089))
-;;; Generated autoloads from erc-join.el
+;;;### (autoloads nil "erc-join" "../../../../.emacs.d/elpa/erc-5.3/erc-join.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-join.el
  (autoload 'erc-autojoin-mode "erc-join" nil t)
 
 ;;;***
 
-;;;### (autoloads nil "erc-list" "erc-list.el" (19802 43088))
-;;; Generated autoloads from erc-list.el
+;;;### (autoloads nil "erc-list" "../../../../.emacs.d/elpa/erc-5.3/erc-list.el"
+;;;;;;  (19802 55125))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-list.el
  (autoload 'erc-list-mode "erc-list")
 
 ;;;***
 
 ;;;### (autoloads (erc-chanlist erc-list-channels) "erc-list-old"
-;;;;;;  "erc-list-old.el" (19802 43090))
-;;; Generated autoloads from erc-list-old.el
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-list-old.el" (19802
+;;;;;;  55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-list-old.el
  (autoload 'erc-list-old-mode "erc-list-old")
 
 (autoload 'erc-list-channels "erc-list-old" "\
@@ -277,8 +288,8 @@ to RFC and send the LIST header (#321) at start of list transmission.
 ;;;***
 
 ;;;### (autoloads (erc-save-buffer-in-logs erc-logging-enabled) "erc-log"
-;;;;;;  "erc-log.el" (19802 43090))
-;;; Generated autoloads from erc-log.el
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-log.el" (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-log.el
  (autoload 'erc-log-mode "erc-log" nil t)
 
 (autoload 'erc-logging-enabled "erc-log" "\
@@ -308,9 +319,9 @@ You can save every individual message by putting this function on
 
 ;;;### (autoloads (erc-delete-dangerous-host erc-add-dangerous-host
 ;;;;;;  erc-delete-keyword erc-add-keyword erc-delete-fool erc-add-fool
-;;;;;;  erc-delete-pal erc-add-pal) "erc-match" "erc-match.el" (19802
-;;;;;;  43088))
-;;; Generated autoloads from erc-match.el
+;;;;;;  erc-delete-pal erc-add-pal) "erc-match" "../../../../.emacs.d/elpa/erc-5.3/erc-match.el"
+;;;;;;  (19802 55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-match.el
  (autoload 'erc-match-mode "erc-match")
 
 (autoload 'erc-add-pal "erc-match" "\
@@ -355,15 +366,16 @@ Delete dangerous-host interactively to `erc-dangerous-hosts'.
 
 ;;;***
 
-;;;### (autoloads nil "erc-menu" "erc-menu.el" (19802 43089))
-;;; Generated autoloads from erc-menu.el
+;;;### (autoloads nil "erc-menu" "../../../../.emacs.d/elpa/erc-5.3/erc-menu.el"
+;;;;;;  (19802 55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-menu.el
  (autoload 'erc-menu-mode "erc-menu" nil t)
 
 ;;;***
 
-;;;### (autoloads (erc-cmd-WHOLEFT) "erc-netsplit" "erc-netsplit.el"
-;;;;;;  (19802 43089))
-;;; Generated autoloads from erc-netsplit.el
+;;;### (autoloads (erc-cmd-WHOLEFT) "erc-netsplit" "../../../../.emacs.d/elpa/erc-5.3/erc-netsplit.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-netsplit.el
  (autoload 'erc-netsplit-mode "erc-netsplit")
 
 (autoload 'erc-cmd-WHOLEFT "erc-netsplit" "\
@@ -374,8 +386,9 @@ Show who's gone.
 ;;;***
 
 ;;;### (autoloads (erc-server-select erc-determine-network) "erc-networks"
-;;;;;;  "erc-networks.el" (19802 43089))
-;;; Generated autoloads from erc-networks.el
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-networks.el" (19802
+;;;;;;  55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-networks.el
 
 (autoload 'erc-determine-network "erc-networks" "\
 Return the name of the network or \"Unknown\" as a symbol.  Use the
@@ -392,8 +405,9 @@ Interactively select a server to connect to using `erc-server-alist'.
 ;;;***
 
 ;;;### (autoloads (pcomplete/erc-mode/NOTIFY erc-cmd-NOTIFY) "erc-notify"
-;;;;;;  "erc-notify.el" (19802 43089))
-;;; Generated autoloads from erc-notify.el
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-notify.el" (19802
+;;;;;;  55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-notify.el
  (autoload 'erc-notify-mode "erc-notify" nil t)
 
 (autoload 'erc-cmd-NOTIFY "erc-notify" "\
@@ -410,33 +424,38 @@ Not documented
 
 ;;;***
 
-;;;### (autoloads nil "erc-page" "erc-page.el" (19802 43088))
-;;; Generated autoloads from erc-page.el
+;;;### (autoloads nil "erc-page" "../../../../.emacs.d/elpa/erc-5.3/erc-page.el"
+;;;;;;  (19802 55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-page.el
  (autoload 'erc-page-mode "erc-page")
 
 ;;;***
 
-;;;### (autoloads nil "erc-pcomplete" "erc-pcomplete.el" (19802 43088))
-;;; Generated autoloads from erc-pcomplete.el
+;;;### (autoloads nil "erc-pcomplete" "../../../../.emacs.d/elpa/erc-5.3/erc-pcomplete.el"
+;;;;;;  (19802 55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-pcomplete.el
  (autoload 'erc-completion-mode "erc-pcomplete" nil t)
 
 ;;;***
 
-;;;### (autoloads nil "erc-replace" "erc-replace.el" (19802 43089))
-;;; Generated autoloads from erc-replace.el
+;;;### (autoloads nil "erc-replace" "../../../../.emacs.d/elpa/erc-5.3/erc-replace.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-replace.el
  (autoload 'erc-replace-mode "erc-replace")
 
 ;;;***
 
-;;;### (autoloads nil "erc-ring" "erc-ring.el" (19802 43090))
-;;; Generated autoloads from erc-ring.el
+;;;### (autoloads nil "erc-ring" "../../../../.emacs.d/elpa/erc-5.3/erc-ring.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-ring.el
  (autoload 'erc-ring-mode "erc-ring" nil t)
 
 ;;;***
 
 ;;;### (autoloads (erc-nickserv-identify erc-nickserv-identify-mode)
-;;;;;;  "erc-services" "erc-services.el" (19802 43089))
-;;; Generated autoloads from erc-services.el
+;;;;;;  "erc-services" "../../../../.emacs.d/elpa/erc-5.3/erc-services.el"
+;;;;;;  (19802 55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-services.el
  (autoload 'erc-services-mode "erc-services" nil t)
 
 (autoload 'erc-nickserv-identify-mode "erc-services" "\
@@ -452,15 +471,16 @@ When called interactively, read the password using `read-passwd'.
 
 ;;;***
 
-;;;### (autoloads nil "erc-sound" "erc-sound.el" (19802 43090))
-;;; Generated autoloads from erc-sound.el
+;;;### (autoloads nil "erc-sound" "../../../../.emacs.d/elpa/erc-5.3/erc-sound.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-sound.el
  (autoload 'erc-sound-mode "erc-sound")
 
 ;;;***
 
-;;;### (autoloads (erc-speedbar-browser) "erc-speedbar" "erc-speedbar.el"
-;;;;;;  (19802 43090))
-;;; Generated autoloads from erc-speedbar.el
+;;;### (autoloads (erc-speedbar-browser) "erc-speedbar" "../../../../.emacs.d/elpa/erc-5.3/erc-speedbar.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-speedbar.el
 
 (autoload 'erc-speedbar-browser "erc-speedbar" "\
 Initialize speedbar to display an ERC browser.
@@ -470,21 +490,23 @@ This will add a speedbar major display mode.
 
 ;;;***
 
-;;;### (autoloads nil "erc-spelling" "erc-spelling.el" (19802 43089))
-;;; Generated autoloads from erc-spelling.el
+;;;### (autoloads nil "erc-spelling" "../../../../.emacs.d/elpa/erc-5.3/erc-spelling.el"
+;;;;;;  (19802 55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-spelling.el
  (autoload 'erc-spelling-mode "erc-spelling" nil t)
 
 ;;;***
 
-;;;### (autoloads nil "erc-stamp" "erc-stamp.el" (19802 43090))
-;;; Generated autoloads from erc-stamp.el
+;;;### (autoloads nil "erc-stamp" "../../../../.emacs.d/elpa/erc-5.3/erc-stamp.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-stamp.el
  (autoload 'erc-timestamp-mode "erc-stamp" nil t)
 
 ;;;***
 
-;;;### (autoloads (erc-track-minor-mode) "erc-track" "erc-track.el"
-;;;;;;  (19802 43088))
-;;; Generated autoloads from erc-track.el
+;;;### (autoloads (erc-track-minor-mode) "erc-track" "../../../../.emacs.d/elpa/erc-5.3/erc-track.el"
+;;;;;;  (19802 55126))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-track.el
 
 (defvar erc-track-minor-mode nil "\
 Non-nil if Erc-Track minor mode is enabled.
@@ -506,8 +528,9 @@ module, otherwise the keybindings will not do anything useful.
 ;;;***
 
 ;;;### (autoloads (erc-truncate-buffer erc-truncate-buffer-to-size)
-;;;;;;  "erc-truncate" "erc-truncate.el" (19802 43089))
-;;; Generated autoloads from erc-truncate.el
+;;;;;;  "erc-truncate" "../../../../.emacs.d/elpa/erc-5.3/erc-truncate.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-truncate.el
  (autoload 'erc-truncate-mode "erc-truncate" nil t)
 
 (autoload 'erc-truncate-buffer-to-size "erc-truncate" "\
@@ -525,9 +548,9 @@ Meant to be used in hooks, like `erc-insert-post-hook'.
 
 ;;;***
 
-;;;### (autoloads (erc-xdcc-add-file) "erc-xdcc" "erc-xdcc.el" (19802
-;;;;;;  43090))
-;;; Generated autoloads from erc-xdcc.el
+;;;### (autoloads (erc-xdcc-add-file) "erc-xdcc" "../../../../.emacs.d/elpa/erc-5.3/erc-xdcc.el"
+;;;;;;  (19802 55127))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-5.3/erc-xdcc.el
  (autoload 'erc-xdcc-mode "erc-xdcc")
 
 (autoload 'erc-xdcc-add-file "erc-xdcc" "\
@@ -537,9 +560,29 @@ Add a file to `erc-xdcc-files'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("erc-backend.el" "erc-goodies.el" "erc-ibuffer.el"
-;;;;;;  "erc-lang.el" "erc-maint.el" "erc-nicklist.el" "erc-pkg.el"
-;;;;;;  "erc-speak.el" "erc-viper.el") (19802 43090 610562))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/erc-5.3/erc-autoaway.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-backend.el" "../../../../.emacs.d/elpa/erc-5.3/erc-bbdb.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-button.el" "../../../../.emacs.d/elpa/erc-5.3/erc-capab.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-chess.el" "../../../../.emacs.d/elpa/erc-5.3/erc-compat.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-dcc.el" "../../../../.emacs.d/elpa/erc-5.3/erc-ezbounce.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-fill.el" "../../../../.emacs.d/elpa/erc-5.3/erc-goodies.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-hecomplete.el" "../../../../.emacs.d/elpa/erc-5.3/erc-ibuffer.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-identd.el" "../../../../.emacs.d/elpa/erc-5.3/erc-imenu.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-join.el" "../../../../.emacs.d/elpa/erc-5.3/erc-lang.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-list-old.el" "../../../../.emacs.d/elpa/erc-5.3/erc-list.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-log.el" "../../../../.emacs.d/elpa/erc-5.3/erc-maint.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-match.el" "../../../../.emacs.d/elpa/erc-5.3/erc-menu.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-netsplit.el" "../../../../.emacs.d/elpa/erc-5.3/erc-networks.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-nicklist.el" "../../../../.emacs.d/elpa/erc-5.3/erc-notify.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-page.el" "../../../../.emacs.d/elpa/erc-5.3/erc-pcomplete.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-pkg.el" "../../../../.emacs.d/elpa/erc-5.3/erc-replace.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-ring.el" "../../../../.emacs.d/elpa/erc-5.3/erc-services.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-sound.el" "../../../../.emacs.d/elpa/erc-5.3/erc-speak.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-speedbar.el" "../../../../.emacs.d/elpa/erc-5.3/erc-spelling.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-stamp.el" "../../../../.emacs.d/elpa/erc-5.3/erc-track.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-truncate.el" "../../../../.emacs.d/elpa/erc-5.3/erc-viper.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-5.3/erc-xdcc.el" "../../../../.emacs.d/elpa/erc-5.3/erc.el")
+;;;;;;  (19802 55127 919231))
 
 ;;;***
 

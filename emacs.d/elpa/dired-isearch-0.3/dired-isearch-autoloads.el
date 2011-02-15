@@ -5,8 +5,9 @@
 
 ;;;### (autoloads (dired-isearch-backward-regexp dired-isearch-forward-regexp
 ;;;;;;  dired-isearch-backward dired-isearch-forward) "dired-isearch"
-;;;;;;  "dired-isearch.el" (19802 50184))
-;;; Generated autoloads from dired-isearch.el
+;;;;;;  "../../../../.emacs.d/elpa/dired-isearch-0.3/dired-isearch.el"
+;;;;;;  (19802 55133))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/dired-isearch-0.3/dired-isearch.el
 
 (autoload 'dired-isearch-forward "dired-isearch" "\
 In Dired, run `isearch-forward' but match only at file names.
@@ -30,7 +31,9 @@ In Dired, run `isearch-backward-regexp' but match only at file names.
 
 ;;;***
 
-;;;### (autoloads nil nil ("dired-isearch-pkg.el") (19802 50184 416700))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/dired-isearch-0.3/dired-isearch-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/dired-isearch-0.3/dired-isearch.el")
+;;;;;;  (19802 55133 260311))
 
 ;;;***
 

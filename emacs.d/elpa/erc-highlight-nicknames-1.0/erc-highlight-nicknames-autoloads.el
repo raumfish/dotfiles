@@ -4,8 +4,9 @@
 
 
 ;;;### (autoloads (erc-highlight-nicknames) "erc-highlight-nicknames"
-;;;;;;  "erc-highlight-nicknames.el" (19802 43085))
-;;; Generated autoloads from erc-highlight-nicknames.el
+;;;;;;  "../../../../.emacs.d/elpa/erc-highlight-nicknames-1.0/erc-highlight-nicknames.el"
+;;;;;;  (19802 55125))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/erc-highlight-nicknames-1.0/erc-highlight-nicknames.el
 
 (autoload 'erc-highlight-nicknames "erc-highlight-nicknames" "\
 Searches for nicknames and highlights them. Uses the first
@@ -16,8 +17,9 @@ color (#rrrrggggbbbb).
 
 ;;;***
 
-;;;### (autoloads nil nil ("erc-highlight-nicknames-pkg.el") (19802
-;;;;;;  43085 848457))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/erc-highlight-nicknames-1.0/erc-highlight-nicknames-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/erc-highlight-nicknames-1.0/erc-highlight-nicknames.el")
+;;;;;;  (19802 55125 123427))
 
 ;;;***
 

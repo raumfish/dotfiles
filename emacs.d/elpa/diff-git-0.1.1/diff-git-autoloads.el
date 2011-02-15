@@ -5,8 +5,9 @@
 
 ;;;### (autoloads (diff-git-default-bindings diff-git-diff-unstaged
 ;;;;;;  diff-git-diff-staged diff-git-buffer-stage diff-git-hunk-stage)
-;;;;;;  "diff-git" "diff-git.el" (19802 43059))
-;;; Generated autoloads from diff-git.el
+;;;;;;  "diff-git" "../../../../.emacs.d/elpa/diff-git-0.1.1/diff-git.el"
+;;;;;;  (19802 55133))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/diff-git-0.1.1/diff-git.el
 
 (autoload 'diff-git-hunk-stage "diff-git" "\
 Stage the current hunk in the index using 'git apply --cached'.
@@ -43,7 +44,9 @@ Add bindings to the `diff-mode' keymap.
 
 ;;;***
 
-;;;### (autoloads nil nil ("diff-git-pkg.el") (19802 43059 987444))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/diff-git-0.1.1/diff-git-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/diff-git-0.1.1/diff-git.el") (19802
+;;;;;;  55133 841193))
 
 ;;;***
 

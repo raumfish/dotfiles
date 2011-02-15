@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (haml-mode) "haml-mode" "haml-mode.el" (19802 50878))
-;;; Generated autoloads from haml-mode.el
+;;;### (autoloads (haml-mode) "haml-mode" "../../../../.emacs.d/elpa/haml-mode-3.0.14/haml-mode.el"
+;;;;;;  (19802 55123))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/haml-mode-3.0.14/haml-mode.el
 
 (autoload 'haml-mode "haml-mode" "\
 Major mode for editing Haml files.
@@ -17,7 +18,9 @@ Major mode for editing Haml files.
 
 ;;;***
 
-;;;### (autoloads nil nil ("haml-mode-pkg.el") (19802 50878 735093))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/haml-mode-3.0.14/haml-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/haml-mode-3.0.14/haml-mode.el")
+;;;;;;  (19802 55123 505089))
 
 ;;;***
 

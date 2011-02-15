@@ -5,8 +5,8 @@
 
 ;;;### (autoloads (cssh-mode cssh-dired-find-file cssh-regexp-host-start
 ;;;;;;  cssh-term-remote-open cssh-turn-on-ibuffer-binding) "cssh"
-;;;;;;  "cssh.el" (19802 43040))
-;;; Generated autoloads from cssh.el
+;;;;;;  "../../../../.emacs.d/elpa/cssh-0.7/cssh.el" (19802 55134))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/cssh-0.7/cssh.el
 
 (autoload 'cssh-turn-on-ibuffer-binding "cssh" "\
 Not documented
@@ -43,7 +43,9 @@ A major mode for controlling multiple terms at once.
 
 ;;;***
 
-;;;### (autoloads nil nil ("cssh-pkg.el") (19802 43040 613287))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/cssh-0.7/cssh-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/cssh-0.7/cssh.el") (19802 55134
+;;;;;;  687325))
 
 ;;;***
 

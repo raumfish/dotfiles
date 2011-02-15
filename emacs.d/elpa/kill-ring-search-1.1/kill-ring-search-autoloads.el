@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (kill-ring-search) "kill-ring-search" "kill-ring-search.el"
-;;;;;;  (19802 43336))
-;;; Generated autoloads from kill-ring-search.el
+;;;### (autoloads (kill-ring-search) "kill-ring-search" "../../../../.emacs.d/elpa/kill-ring-search-1.1/kill-ring-search.el"
+;;;;;;  (19802 55120))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/kill-ring-search-1.1/kill-ring-search.el
 
 (autoload 'kill-ring-search "kill-ring-search" "\
 Search the kill ring in the minibuffer.
@@ -14,8 +14,9 @@ Search the kill ring in the minibuffer.
 
 ;;;***
 
-;;;### (autoloads nil nil ("kill-ring-search-pkg.el") (19802 43337
-;;;;;;  55957))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/kill-ring-search-1.1/kill-ring-search-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/kill-ring-search-1.1/kill-ring-search.el")
+;;;;;;  (19802 55120 219739))
 
 ;;;***
 

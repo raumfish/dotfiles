@@ -5,8 +5,9 @@
 
 ;;;### (autoloads (blank-global-mode-off blank-global-mode-on blank-global-mode
 ;;;;;;  blank-mode-off blank-mode-on blank-mode blank-mode-customize)
-;;;;;;  "blank-mode" "blank-mode.el" (19802 50835))
-;;; Generated autoloads from blank-mode.el
+;;;;;;  "blank-mode" "../../../../.emacs.d/elpa/blank-mode-6.6/blank-mode.el"
+;;;;;;  (19802 55136))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/blank-mode-6.6/blank-mode.el
 
 (autoload 'blank-mode-customize "blank-mode" "\
 Customize blank-mode options.
@@ -52,7 +53,9 @@ Turn off blank global minor mode visualisation (BL on modeline).
 
 ;;;***
 
-;;;### (autoloads nil nil ("blank-mode-pkg.el") (19802 50835 647397))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/blank-mode-6.6/blank-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/blank-mode-6.6/blank-mode.el")
+;;;;;;  (19802 55136 565277))
 
 ;;;***
 

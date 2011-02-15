@@ -6,9 +6,9 @@
 ;;;### (autoloads (lusty-launch-dired lusty-select-current-name lusty-select-match
 ;;;;;;  lusty-open-this lusty-highlight-previous-column lusty-highlight-next-column
 ;;;;;;  lusty-highlight-previous lusty-highlight-next lusty-buffer-explorer
-;;;;;;  lusty-file-explorer) "lusty-explorer" "lusty-explorer.el"
-;;;;;;  (19802 51000))
-;;; Generated autoloads from lusty-explorer.el
+;;;;;;  lusty-file-explorer) "lusty-explorer" "../../../../.emacs.d/elpa/lusty-explorer-2.4/lusty-explorer.el"
+;;;;;;  (19802 55118))
+;;; Generated autoloads from ../../../../.emacs.d/elpa/lusty-explorer-2.4/lusty-explorer.el
 
 (autoload 'lusty-file-explorer "lusty-explorer" "\
 Launch the file/directory mode of LustyExplorer.
@@ -62,8 +62,9 @@ Launch dired at the current directory.
 
 ;;;***
 
-;;;### (autoloads nil nil ("lusty-explorer-pkg.el") (19802 51000
-;;;;;;  555102))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/lusty-explorer-2.4/lusty-explorer-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/lusty-explorer-2.4/lusty-explorer.el")
+;;;;;;  (19802 55118 727184))
 
 ;;;***
 
