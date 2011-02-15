@@ -12,6 +12,13 @@
 (autoload 'findr-query-replace "findr" "Replace text in files." t)
 (define-key global-map [(meta control r)] 'findr-query-replace)
 
-(require 'save-visited-files)
-(turn-on-save-visited-files-mode)
+(require 'blank-mode)
+
+(require 'mv-shell)
+(mv-shell-mode 1)
+
+(require 'nav)
+
+(require 'smart-tab)
+(global-smart-tab-mode 1)
 
