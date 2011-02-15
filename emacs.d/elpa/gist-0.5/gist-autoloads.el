@@ -5,7 +5,7 @@
 
 ;;;### (autoloads (gist-fetch gist-list gist-region-or-buffer-private
 ;;;;;;  gist-region-or-buffer gist-buffer-private gist-buffer gist-region-private
-;;;;;;  gist-region) "gist" "gist.el" (19801 15520))
+;;;;;;  gist-region) "gist" "gist.el" (19799 1440))
 ;;; Generated autoloads from gist.el
 
 (autoload 'gist-region "gist" "\
@@ -63,7 +63,7 @@ If the Gist already exists in a buffer, switches to it
 
 ;;;***
 
-;;;### (autoloads nil nil ("gist-pkg.el") (19801 15520 865865))
+;;;### (autoloads nil nil ("gist-pkg.el") (19799 1441 93000))
 
 ;;;***
 

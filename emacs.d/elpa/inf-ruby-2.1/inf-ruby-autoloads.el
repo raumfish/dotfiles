@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (run-ruby inf-ruby inf-ruby-keys) "inf-ruby" "inf-ruby.el"
-;;;;;;  (19801 15517))
+;;;;;;  (19799 1430))
 ;;; Generated autoloads from inf-ruby.el
 
 (autoload 'inf-ruby-keys "inf-ruby" "\
@@ -35,7 +35,7 @@ of `ruby-program-name').  Runs the hooks `inferior-ruby-mode-hook'
 
 ;;;***
 
-;;;### (autoloads nil nil ("inf-ruby-pkg.el") (19801 15517 85904))
+;;;### (autoloads nil nil ("inf-ruby-pkg.el") (19799 1430 316000))
 
 ;;;***
 

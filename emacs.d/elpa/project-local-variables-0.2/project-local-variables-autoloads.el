@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (plv-find-project-file) "project-local-variables"
-;;;;;;  "project-local-variables.el" (19801 15518))
+;;;;;;  "project-local-variables.el" (19799 1433))
 ;;; Generated autoloads from project-local-variables.el
 
 (autoload 'plv-find-project-file "project-local-variables" "\
@@ -16,8 +16,8 @@ Look up the project file in and above `dir'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("project-local-variables-pkg.el") (19801
-;;;;;;  15518 195532))
+;;;### (autoloads nil nil ("project-local-variables-pkg.el") (19799
+;;;;;;  1433 280000))
 
 ;;;***
 
