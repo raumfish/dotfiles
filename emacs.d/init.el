@@ -20,6 +20,9 @@
 (setq dotfiles-dir (file-name-directory
                     (or (buffer-file-name) load-file-name)))
 
+;; Require dired before package manager to avoid init error
+(require 'dired)
+
 ;; Load up ELPA, the package manager
 
 (add-to-list 'load-path dotfiles-dir)
