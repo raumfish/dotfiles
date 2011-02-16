@@ -1,3 +1,22 @@
+;; server start
+(server-start)
+
+;; If you prefer delete to actually delete forward then you want to
+;; uncomment the next line (or use `Customize' to customize this).
+(setq delete-key-deletes-forward t)
+
+;; Make the sequence "C-x w" execute the `what-line' command, 
+;; which prints the current line number in the echo area.
+(global-set-key "\C-xw" 'what-line)
+
+;; If you prefer delete to actually delete forward then you want to
+;; uncomment the next line (or use `Customize' to customize this).
+(setq delete-key-deletes-forward t)
+
+;; Load Path
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/")
+
 ;; kill-ring-search ELPA
 (autoload 'kill-ring-search "kill-ring-search"
           "Search the kill ring in the minibuffer."
