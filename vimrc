@@ -6,7 +6,7 @@
 set nocompatible
 
 " General appearance and behaviour
-filetype plugin indent on
+"filetype plugin indent on
 syntax on
 set visualbell t_vb=
 set noerrorbells
@@ -185,7 +185,7 @@ set nocompatible
 " Also load indent files, to automatically do language-dependent indenting.
 "-------------------------------------------------------------------------------
 filetype  plugin on
-filetype  indent on
+"filetype  indent on
 "
 "-------------------------------------------------------------------------------
 " Switch syntax highlighting on.
@@ -373,4 +373,8 @@ set pastetoggle=<F9>
 " abbreviations
 iabbrev ssgm Shawn.Skriver@gmail.com
 iabbrev sig -Shawn Skriver
+
+" turn off all auto-indentation
+filetype plugin indent off
+:nnoremap <F8> :setl noai nocin nosi inde=<CR>
 
