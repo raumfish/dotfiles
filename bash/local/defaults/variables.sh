@@ -7,8 +7,8 @@ function prompt_command() {
  }
 
 ## Original PS1 definition
-#PS1="\[\e[31;43m\]\u@\h\[\e[0m\] "
-PS1="\$ "
+PS1="\[\e[31;43m\]\u@\h\[\e[0m\] "
+#PS1="\$ "
 
 ## Original PROMPT_COMMAND definition
 #PROMPT_COMMAND=prompt_command
