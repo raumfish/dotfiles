@@ -79,3 +79,11 @@
 ;; set color-theme
 (color-theme-blackboard)
 
+;; set tramp
+(add-to-list 'tramp-default-proxies-alist
+             '("\\.corp\\.cat\\.com\\'" "\\`root\\'" "/ssh:%h:"))
+
+(add-to-list 'tramp-default-proxies-alist
+             '("\\.mwhpc\\.cat\\.com\\'" "\\`root\\'" "/ssh:%h:"))
+
+
