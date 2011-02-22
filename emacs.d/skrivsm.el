@@ -80,10 +80,11 @@
 (color-theme-blackboard)
 
 ;; set tramp
+(setq tramp-default-method "sshx")
 (add-to-list 'tramp-default-proxies-alist
-             '("\\.corp\\.cat\\.com\\'" "\\`root\\'" "/ssh:%h:"))
+             '("\\.corp\\.cat\\.com\\'" "\\`root\\'" "/sshx:%h:"))
 
 (add-to-list 'tramp-default-proxies-alist
-             '("\\.mwhpc\\.cat\\.com\\'" "\\`root\\'" "/ssh:%h:"))
+             '("\\.mwhpc\\.cat\\.com\\'" "\\`root\\'" "/sshx:%h:"))
 
 
