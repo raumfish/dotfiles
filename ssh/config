@@ -31,9 +31,9 @@ Host vis*
 Host animalmednetwork.com
   IdentityFile              ~/.ssh/tunnel_id_dsa
   IdentitiesOnly            yes
-  User                      root
+  User                      skrivsm
   Port                      22
-  PreferredAuthentications  publickey
+  PreferredAuthentications  publickey,password
   Compression               yes
   PubkeyAuthentication      yes
   PasswordAuthentication    yes
