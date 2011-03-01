@@ -40,6 +40,7 @@ relink ~/.parallelrc   ~/etc/parallelrc
 relink ~/.emacs.d ~/etc/emacs.d
 relink ~/.hoerc       ~/etc/hoerc
 relink ~/.irssi       ~/etc/irssi
+relink ~/.lftp       ~/etc/lftp
 
 UNAME=`uname`
 
