@@ -21,7 +21,7 @@ set prompt "lftp \S\? \u\@\h:\w> "
 #set default-protocol/localhost	file
 
 ## this makes lftp faster but doesn't work with some sites/routers
-#set ftp:sync-mode off
+set ftp:sync-mode on
 
 ## synchronous mode for broken servers and/or routers
 set sync-mode/ftp.idsoftware.com on
@@ -64,14 +64,14 @@ set xfer:max-redirections 10
 set net:no-proxy .cat.com,.corp.cat.com,.ap.cat.com
 
 ## If you don't have direct ftp access, this setting can be useful to select
-## http instead of ftp automatically.
+## hftp instead of ftp automatically.
 # set ftp:proxy http://your.http.proxy:port
 
 ## This can be used for automatic saving of configuration
 set at-exit "set > ~/.lftp/settings"
 source ~/.lftp/settings
 
-## and this is for remembring last site
+## and this is for remembering last site
 ## (combine with previous rule if you want)
 # set at-exit "bo a last"
 # open last
@@ -88,3 +88,10 @@ set cmd:term-status/*rxvt* "\e[11;0]\e]2;\T\007\e[11]"
 # set ftp:anon-pass "mozilla@"
 # set ftp:client ""
 # set http:user-agent "Mozilla/4.7 [en] (WinNT; I)"
+
+## Customizations by Shawn Skriver
+set xfer:clobber yes
+set cmd:parallel 4
+set bmk:save-passwords yes
+set mirror:use-pget-n 1
+set mirror:parallel-directories yes
