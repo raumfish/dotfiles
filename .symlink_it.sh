@@ -41,6 +41,7 @@ relink ~/.emacs.d ~/etc/emacs.d
 relink ~/.hoerc       ~/etc/hoerc
 relink ~/.irssi       ~/etc/irssi
 relink ~/.lftp       ~/etc/lftp
+relink ~/.flexlmrc   ~/etc/flexlmrc
 
 UNAME=`uname`
 
