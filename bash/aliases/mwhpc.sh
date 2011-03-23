@@ -8,10 +8,7 @@ export FS3=mtlflexp03.corp.cat.com
 
 # ABAQUS (Vendor: ABAQUS)
 FV_ABAQUS=abaquslm
-## versions 6.9 and 6.10
-FP_ABAQUS=27000         
-## version 6.8
-#FP_ABAQUS=37000  # @n1pes01.cis.cat.com
+FP_ABAQUS=37000         
 FL_ABAQUS=$FP_ABAQUS@$FS1:$FP_ABAQUS@$FS2:$FP_ABAQUS@$FS3
 PATH_ABAQUS=/apps/Abaqus/6.10-1/exec/
 
@@ -25,7 +22,7 @@ PATH_FLUENT=/apps/ansys_inc/v130/fluent/bin
 FV_STARCD=cdlmd
 FP_STARCD=25199
 FL_STARCD=$FP_STARCD@$FS1:$FP_STARCD@$FS2:$FP_STARCD$FS3
-PATH_STARCD=/apps/StarCD/starcd-3240/bin:/apps/StarCD/star-ccm/starccm+5.06.007/star/bin
+PATH_STARCD=/apps/StarCD/starcd-3240/bin:/apps/StarCD/star-ccm/starccm+6.02.007/star/bin
 
 # ANSYS (Vendor: ANSYS)
 FV_ANSYS=ansyslmd
