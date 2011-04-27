@@ -30,6 +30,7 @@ $*
 .netrwhist
 .newsrc-dribble
 .nnmail-cache
+.private/*
 .svn
 .~*
 /#.newsrc-dribble#

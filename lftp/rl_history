@@ -1,3 +1,37 @@
 set -d
 set -a
 bye
+open a3lhpcp01.corp.cat.com
+pwd
+ls
+user mwxfer
+ls
+password
+bye
+lftp mwxfer@a3lhpcp01.corp.cat.com
+ls
+dir
+bye
+lftp ftp://mwxfer:H3ada1X@h8lhpcp01.laf.cat.com
+dir
+bye
+lftp -e pwd -u mwxfer,H3adA1X h8lhpcp01.laf.cat.com
+ls *
+!pwd
+!ls
+cache
+nlist
+slot
+bye
+lftp mwxfer@a3lhpcp01.corp.cat.com
+ls
+bye
+lftp -u mwxfer,H3ada1X h8lhpcp01.laf.cat.com
+dir
+bye
+user mwxfer
+dir
+ls
+bye
+set
+quit

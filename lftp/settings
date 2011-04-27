@@ -5,16 +5,19 @@ set cmd:prompt "lftp \\S\\? \\u\\@\\h:\\w> "
 set cmd:term-status/*rxvt* "\\e[11;0]\\e]2;\\T\\007\\e[11]"
 set cmd:term-status/*screen* \\e_\\T\\e\\
 set cmd:term-status/*xterm* "\\e[11;0]\\e]2;\\T\\007\\e[11]"
+set color:dir-colors "no=00:fi=00:di=00;34:ln=00;36:pi=40;33:so=00;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=00;32:*.cmd=00;32:*.exe=00;32:*.com=00;32:*.btm=00;32:*.bat=00;32:*.sh=00;32:*.csh=00;32:*.tar=00;31:*.tgz=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bz=00;31:*.tz=00;31:*.rpm=00;31:*.cpio=00;31:*.jpg=00;35:*.gif=00;35:*.bmp=00;35:*.xbm=00;35:*.xpm=00;35:*.png=00;35:*.tif=00;35:"
 set file:charset UTF-8
 set ftp:auto-sync-mode "icrosoft FTP Service|MadGoat|MikroTik"
-set ftp:sync-mode on
+set ftp:sync-mode off
 set ftp:sync-mode/ftp.idsoftware.com on
 set ftp:sync-mode/ftp.microsoft.com on
 set ftp:sync-mode/sunsolve.sun.com on
 set hftp:proxy http://proxy.cat.com:80/
 set http:proxy http://proxy.cat.com:80/
+set https:proxy http://proxy.cat.com:80/
 set mirror:parallel-directories yes
 set mirror:use-pget-n 1
-set net:no-proxy .cat.com,.corp.cat.com,.ap.cat.com
+set net:no-proxy .cat.com,.corp.cat.com,.ap.cat.com,.uk.cat.com,mw.na.cat.com,.ecorp.cat.com
 set xfer:clobber yes
 set xfer:max-redirections 10
+set xfer:verify-command /usr/share/lftp/verify-file
