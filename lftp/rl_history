@@ -1,3 +1,47 @@
 set -d
 set -a
 bye
+lftp -e ls ftp://skrivsm:T3stPass@n1mwph1.corp.cat.com
+lftp -e rels ftp://skrivsm:T3stPass@n1mwph1.corp.cat.com
+lftp -e ls ftp://mwxfer:H3ada1X@a3lhpcp01.corp.cat.com
+bye
+lftp -u skrivsm,T3stPass -e ls n1mwph1.corp.cat.com
+lftp -u mwxfer,H3ada1X -e ls a3lhpcp01.corp.cat.com
+lftp -u mwxfer,H3adalX -e ls a3lhpcp01.corp.cat.com
+bye
+lftp -u mwxfer,H3adA1X -e ls a3lhpcp01.corp.cat.com
+bye
+lftp -u mwxfer,H3adA1X a3lhpcp01.corp.cat.com
+dir
+cd /mwjobs/jobs
+cls
+cls 124649
+recls
+recls 194649
+recls 124649
+cd ..
+rcls
+recls
+cd jobs
+recls
+list
+nlist
+renlist
+set
+bookmark list
+exit
+set -a
+set https:proxy http://proxy.cat.com:80
+set https:proxy
+set -a
+set https:proxy http://proxy.cat.com:80
+set -a
+set https:proxy http://proxy.cat.com:80/
+exit
+set -a
+set mirror:parallel-transfer-count 4
+exit
+set -a
+quit
+set
+quit
