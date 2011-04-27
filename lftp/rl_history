@@ -1,6 +1,3 @@
-set -d
-set -a
-bye
 lftp -e ls ftp://skrivsm:T3stPass@n1mwph1.corp.cat.com
 lftp -e rels ftp://skrivsm:T3stPass@n1mwph1.corp.cat.com
 lftp -e ls ftp://mwxfer:H3ada1X@a3lhpcp01.corp.cat.com
@@ -42,6 +39,3 @@ set -a
 set mirror:parallel-transfer-count 4
 exit
 set -a
-quit
-set
-quit
