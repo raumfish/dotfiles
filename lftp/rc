@@ -1,97 +1,23 @@
-## some useful aliases
-alias dir ls
-alias less more
-alias zless zmore
-alias bzless bzmore
-alias reconnect "close; cache flush; cd ."
-alias edit "eval -f \"get '$0' -o ~/.lftp/edit.tmp.$$ && shell \\\"cp -p ~/.lftp/edit.tmp.$$ ~/.lftp/edit.tmp.$$.orig && ${EDITOR:-vi} ~/.lftp/edit.tmp.$$ && test ~/.lftp/edit.tmp.$$ -nt ~/.lftp/edit.tmp.$$.orig\\\" && put ~/.lftp/edit.tmp.$$ -o '$0'; shell rm -f ~/.lftp/edit.tmp.$$*\""
-
-## make prompt look better
-set prompt "lftp \S\? \u\@\h:\w> "
-## some may prefer colors (contributed by Matthew <mwormald@optusnet.com.au>)
-#set prompt "\[\e[1;30m\][\[\e[0;34m\]f\[\e[1m\]t\[\e[37m\]p\[\e[30m\]] \[\e[34m\]\u\[\e[0;34m\]\@\[\e[1m\]\h\[\e[1;30m\]:\[\e[1;34m\]\w\[\e[1;30m\]>\[\e[0m\] "
-## Uncomment the following two lines to make switch cls and ls, making
-## cls the default.
-#alias ls command cls
-#alias hostls command ls
-
-## default protocol selection
-#set default-protocol/ftp.*	ftp
-#set default-protocol/www.*	http
-#set default-protocol/localhost	file
-
-## this makes lftp faster but doesn't work with some sites/routers
-set ftp:sync-mode on
-
-## synchronous mode for broken servers and/or routers
-set sync-mode/ftp.idsoftware.com on
-set sync-mode/ftp.microsoft.com on
-set sync-mode/sunsolve.sun.com on
-## extended regex to match first server message for automatic sync-mode.
-set auto-sync-mode "icrosoft FTP Service|MadGoat|MikroTik"
-
-## if default ftp passive mode does not work, try this:
-# set ftp:passive-mode off
-
-## Set this to follow http redirections
-set xfer:max-redirections 10
-
-## Proxy can help to pass a firewall
-## Environment variables ftp_proxy, http_proxy and no_proxy are used to
-## initialize the below variables automatically. You can set them here too.
-##
-## ftp:proxy must communicate with client over ftp protocol, squid won't do.
-## This can be e.g. TIS-FWTK or rftpd. User and password are optional.
-# set ftp:proxy ftp://[user:pass@]your_ftp_proxy:port
-## ...but squid still can be used to access ftp servers, using hftp protocol:
-# set ftp:proxy http://your.squid.address:port
-## ...if squid allows CONNECT to arbitrary ports, then you can use CONNECT
-## instead of hftp:
-# set ftp:use-hftp no
-##
-## no proxy for host
-# set ftp:proxy/local_host ""
-## or domain
-# set ftp:proxy/*.domain.com ...
-##
-## http:proxy must communicate with client over http protocol, e.g. squid.
-## Default port is 3128.
-# set http:proxy your_http_proxy[:port]
-## hftp:proxy must also be an http proxy. It is used for FTP over HTTP access.
-# set hftp:proxy your_http_proxy[:port]
-##
-## net:no-proxy disables proxy usage for list of domains.
-set net:no-proxy .cat.com,.corp.cat.com,.ap.cat.com
-
-## If you don't have direct ftp access, this setting can be useful to select
-## hftp instead of ftp automatically.
-# set ftp:proxy http://your.http.proxy:port
-
-## This can be used for automatic saving of configuration
-set at-exit "set > ~/.lftp/settings"
-source ~/.lftp/settings
-
-## and this is for remembering last site
-## (combine with previous rule if you want)
-# set at-exit "bo a last"
-# open last
-
-## Terminal strings to set titlebars for terminals that don't
-## properly specify tsl and fsl capabilities.
-## Use cmd:set-term-status to enable this.
-set cmd:term-status/*screen* "\e_\T\e\\"
-set cmd:term-status/*xterm* "\e[11;0]\e]2;\T\007\e[11]"
-set cmd:term-status/*rxvt* "\e[11;0]\e]2;\T\007\e[11]"
-# set cmd:set-term-status on
-
-## If you don't like advertising lftp or servers hate it, set this:
-# set ftp:anon-pass "mozilla@"
-# set ftp:client ""
-# set http:user-agent "Mozilla/4.7 [en] (WinNT; I)"
-
-## Customizations by Shawn Skriver
-set xfer:clobber yes
-set cmd:parallel 4
 set bmk:save-passwords yes
-set mirror:use-pget-n 1
+set cmd:at-exit "set > ~/.lftp/settings"
+set cmd:parallel 4
+set cmd:prompt "lftp \\S\\? \\u\\@\\h:\\w> "
+set cmd:term-status/*rxvt* "\\e[11;0]\\e]2;\\T\\007\\e[11]"
+set cmd:term-status/*screen* \\e_\\T\\e\\
+set cmd:term-status/*xterm* "\\e[11;0]\\e]2;\\T\\007\\e[11]"
+set color:dir-colors "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:"
+set file:charset UTF-8
+set ftp:auto-sync-mode "icrosoft FTP Service|MadGoat|MikroTik"
+set ftp:sync-mode off
+set ftp:sync-mode/ftp.idsoftware.com on
+set ftp:sync-mode/ftp.microsoft.com on
+set ftp:sync-mode/sunsolve.sun.com on
+set hftp:proxy http://proxy.cat.com:80/
+set http:proxy http://proxy.cat.com:80/
+set https:proxy http://proxy.cat.com:80/
 set mirror:parallel-directories yes
+set mirror:parallel-transfer-count 4
+set net:no-proxy .cat.com,.corp.cat.com,.ap.cat.com,.uk.cat.com,.ecorp.cat.com
+set xfer:clobber yes
+set xfer:max-redirections 10
+set xfer:verify-command /usr/share/lftp/verify-file

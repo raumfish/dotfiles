@@ -16,6 +16,8 @@ if [ `hostname` = "ncc01905.fpd.cat.com" ] ; then
    fi
 fi
 
-alias gw='ssh -x -Y -l skrivsm n1mwph1.corp.cat.com'
-alias gw_dev='ssh -x -Y -l skrivsm n1mwdh1.corp.cat.com'
+alias gw='ssh -l skrivsm n1mwph1.corp.cat.com'
+alias gw2='ssh -l skrivsm n1mwph2.corp.cat.com'
+
+alias gw_dev='ssh -l skrivsm n1mwdh1.corp.cat.com'
 
