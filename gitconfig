@@ -18,7 +18,7 @@
 	user = caomai
 	token = c3d7f44ebb6e711f910c4bb2f5d19e21
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /home/skrivsm/.gitignore
 	autocrlf = input
 [branch]
   autosetuprebase = always
