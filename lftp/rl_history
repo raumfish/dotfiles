@@ -1,3 +1,6 @@
 set -d
 set -a
 bye
+quit
+set
+quit
