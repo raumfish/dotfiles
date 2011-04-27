@@ -73,3 +73,7 @@ set -a
 set mirror:parallel-transfer-count 4
 exit
 set -a
+set
+quit
+set
+exit

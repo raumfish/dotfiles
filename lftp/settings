@@ -16,8 +16,8 @@ set hftp:proxy http://proxy.cat.com:80/
 set http:proxy http://proxy.cat.com:80/
 set https:proxy http://proxy.cat.com:80/
 set mirror:parallel-directories yes
-set mirror:use-pget-n 1
 set mirror:parallel-transfer-count 4
+set mirror:use-pget-n 1
 set net:no-proxy .cat.com,.corp.cat.com,.ap.cat.com,.uk.cat.com,.ecorp.cat.com
 set xfer:clobber yes
 set xfer:max-redirections 10
