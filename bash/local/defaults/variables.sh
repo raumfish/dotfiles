@@ -53,15 +53,18 @@ alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' 
 ## History
 export HISTFILE=${HOME}/history
 export HISTCONTROL=ignoredups # Ignores dupes in the history
-export HISTFILESIZE=3000
-export HISTSIZE=3000
+export HISTFILESIZE=5000
+export HISTSIZE=5000
 #export HISTIGNORE="&:[ ]*:exit:cd:pwd:ls:ll:history:clear:reset:stty"
 export HISTIGNORE="&:[ ]*:exit:cd:pwd:ls:ll:history[ ]*:h[ ]*:clear:cls:reset:stty:git:ssh:rsh:ps:man:qdel:less:top:whoami:w:who:nslookup:finger:id:file:pbsnodes:tracejob:lastlog:env:more:qmgr:qstat:l:uptime"
 
 shopt -s histappend
 shopt -s histreedit
 shopt -s histverify
-
+shopt -s cdspell
+shopt -s nocaseglob
+#shopt -s xpg_echo
+export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
