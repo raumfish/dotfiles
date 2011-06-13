@@ -77,3 +77,11 @@ set
 quit
 set
 exit
+lftp -u skrivsm,G@313ri@ -e "mirror -cRP --verbose=3 --include-glob '*.cas *.cut *.dat *.f0? *.fb? *.gz *.h3d *.k *.log *.msg *.odb *.op? *.out *.rec *.sh *.sta *.stat' /home/skrivsm/scratch/127714 /mwjobs/jobs/127714" a2lhpcp01.corp.cat.com
+lftp -u skrivsm,G@313ri@ -e "mirror -cRP --verbose=3 --include-glob '*.out' /home/skrivsm/scratch/127714 /mwjobs/jobs/127714" a2lhpcp01.corp.cat.com
+lftp -u skrivsm,G@313ri@ -e "mirror -cRP -vvv -I '*.out' /home/skrivsm/scratch/127714 /mwjobs/jobs/127714" a2lhpcp01.corp.cat.com
+lftp -u skrivsm,G@313ri@ -e "mirror -cRP -vvv -I '*.out' '*.cas' /home/skrivsm/scratch/127714 /mwjobs/jobs/127714" a2lhpcp01.corp.cat.com
+lftp -u skrivsm,G@313ri@ -e "mirror -cRP -vvv -I '*.out' -I '*.cas' /home/skrivsm/scratch/127714 /mwjobs/jobs/127714" a2lhpcp01.corp.cat.com
+bye
+open -u mwxfer,H3adA1X a2lhpcp01.corp.cat.com
+bye

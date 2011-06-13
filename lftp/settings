@@ -12,6 +12,7 @@ set ftp:sync-mode off
 set ftp:sync-mode/ftp.idsoftware.com on
 set ftp:sync-mode/ftp.microsoft.com on
 set ftp:sync-mode/sunsolve.sun.com on
+set ftp:use-allo/a2lhpcp01.corp.cat.com no
 set hftp:proxy http://proxy.cat.com:80/
 set http:proxy http://proxy.cat.com:80/
 set https:proxy http://proxy.cat.com:80/
