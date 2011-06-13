@@ -1,2 +1,27 @@
 create table node_top (node_name TEXT, pid INTEGER, user TEXT, pr TEXT, ni INTEGER, virt TEXT, res TEXT, shr INTEGER, s TEXT, pcpu NUMBER, pmem NUMBER, timep TEXT, command TEXT);
 .q
+.tables
+.help
+.quit
+create table if not exists hpcusers.loginid(
+lid_pk integer primary key,
+lid_cws varchar2(10),
+lid_hpc varchar2(10),
+lid_name varchar2(50),
+lid_mail varchar2(60),
+lid_tcreate varchar2(23),
+lid_talter varchar2(23)
+);
+create table if not exists loginid(
+lid_pk integer primary key,
+lid_cws text,
+lid_hpc text,
+lid_name text,
+lid_mail text,
+lid_tcreate text,
+lid_talter text
+);
+.tables
+.scheme
+.help
+.schema loginid
