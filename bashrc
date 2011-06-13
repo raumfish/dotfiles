@@ -7,6 +7,12 @@ function cond_source () {
 }
 
 ############################################################
+# FUNCTIONS
+############################################################
+glu() { (local IFS="$1"; shift && echo "$*") }
+repath() { ( _E=`echo "${PATH//:/$'\n'}" | awk '!x[$0]++'`; glu ":" $_E ) ; }
+
+############################################################
 # VARIABLES AND MISC                                       #
 ############################################################
 
@@ -77,4 +83,6 @@ export HTTP_PROXY=http://proxy.cat.com:80/
 export http_proxy=${HTTP_PROXY}
 
 alias ll='ls -l'
+
+PATH=`repath`; export PATH
 
